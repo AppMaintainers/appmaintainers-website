@@ -12,23 +12,20 @@ document.addEventListener('DOMContentLoaded', function() {
 	var firstTime = localStorage.getItem("first_time");
 	var language = window.navigator.userLanguage || window.navigator.language;
 	if((localStorage.getItem("languagePreference") == null) && language == "hu-HU"){
-		if(!document.URL.includes("hu_index.html")){
-            window.location.href="hu_index.html";
+		if(!document.URL.includes("hu")){
+            window.location.href="/hu/index.html";
 			localStorage.setItem("hunBrowser", new Date());
-			console.log("1");
         }
 	}
 	else if(localStorage.getItem("languagePreference") === "HUN"){
-		if(!document.URL.includes("hu_index.html")){
-            window.location.href="hu_index.html";
-			console.log("2");
+		if(!document.URL.includes("hu")){
+            window.location.href="/hu/index.html";
 		}
 	}
 	else if(localStorage.getItem("languagePreference") === "ENG"){
 		if(document.URL.includes("hu")){
 			console.log(document.URL);
-            window.location.href="index.html";
-			console.log("3");
+            window.location.href="../index.html";
 		}
 	}
     // open
