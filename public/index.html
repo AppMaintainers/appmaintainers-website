@@ -1,46 +1,65 @@
-<!DOCTYPE html>
+
 <html lang="en">
   <head>
-    <title>Page title</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
-    <link rel="stylesheet" href="css/tailwind/tailwind.min.css">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-tailwind.png">
+    <title>AppMaintainers</title>
+    <meta property="og:title" content="AppMaintainers"/>
+    <meta property="og:url" content="https://new.appmaintainers.com/"/>
+    <meta property="og:image" content="assets/images/Screen-Shot-2012-11-06-at-3-08-56-PM.png"/>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta name="description" property="og:description" content="Egyedi szoftvereket fejlesztünk és tartunk karban. Az általunk készített megoldások bármilyen eszközön használhatóak. Reszponzív webalkalmazásainkat akár mobil alkalmazásként is  elérhetővé teheti."/>
+    <meta name="author" content=""/>
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css"/>
+    <link rel="stylesheet" href="css/tailwind/tailwind.min.css"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon.png"/>
     <script src="js/main.js"></script>
   </head>
   <body class="antialiased bg-body text-body font-body">
-    <div class=""> 
-    
-      <section><div class="container px-4 mx-auto">
-          <nav class="flex items-center py-6"><a class="text-3xl font-semibold leading-none" href="#"><img src="images/Screenshot-2021-06-08-at-10-39-25.png" alt="App Maintainers" width="300"></a>
+    <div>
+      <section>
+        <div class="container px-4 mx-auto">
+          <nav class="flex items-center py-6"><a class="text-3xl font-semibold leading-none" href="#"><img src="images/Screenshot-2021-06-08-at-10-39-25.png" alt="App Maintainers" width="300"/></a>
             <div class="lg:hidden ml-auto">
               <button class="navbar-burger flex items-center py-2 px-3 text-blue-600 hover:text-blue-700 rounded border border-blue-200 hover:border-blue-300">
-                <svg class="fill-current h-4 w-4" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Mobile menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path></svg></button>
+                <svg class="fill-current h-4 w-4" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                  <title>Mobile menu</title>
+                  <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                </svg>
+              </button>
             </div>
-            <ul class="hidden lg:flex ml-12 mr-auto space-x-12"><li class=""><a class="text-sm text-blueGray-400 hover:text-blueGray-500 hidden" href="#">Development</a></li>
-              <li class=""><a class="text-sm text-blueGray-400 hover:text-blueGray-500 hidden" href="#">Maintenance</a></li>
-              <li class=""><a class="text-sm text-blueGray-400 hover:text-blueGray-500 hidden" href="#">Updates</a></li>
-              <li class=""><a class="text-sm text-blueGray-400 hover:text-blueGray-500 hidden" href="#">About us</a></li>
-            </ul><div class="hidden lg:block"><a class="mr-2 inline-block px-4 py-3 text-xs text-blue-600 hover:text-blue-700 font-semibold leading-none border border-blue-200 hover:border-blue-300 rounded" href="#">Write to us!</a><a class="inline-block px-4 py-3 text-xs font-semibold leading-none bg-blue-600 hover:bg-blue-700 text-white rounded" href="#">Book a video call!</a></div>
-          </nav></div>
+            <ul class="hidden lg:flex ml-12 mr-auto space-x-12">
+              <li><a class="text-sm text-blueGray-400 hover:text-blueGray-500 hidden" href="#">Development</a></li>
+              <li><a class="text-sm text-blueGray-400 hover:text-blueGray-500 hidden" href="#">Maintenance</a></li>
+              <li><a class="text-sm text-blueGray-400 hover:text-blueGray-500 hidden" href="#">Updates</a></li>
+              <li><a class="text-sm text-blueGray-400 hover:text-blueGray-500 hidden" href="#">About us</a></li>
+            </ul>
+            <div class="hidden lg:block"><a class="mr-2 inline-block px-4 py-3 text-xs text-blue-600 hover:text-blue-700 font-semibold leading-none border border-blue-200 hover:border-blue-300 rounded" href="hu_index.html" onclick="setHunDefault()">HU</a><a class="mr-2 inline-block px-4 py-3 text-xs text-blue-600 hover:text-blue-700 font-semibold leading-none border border-blue-200 hover:border-blue-300 rounded" href="mailto: info@appmaintainers.com">Write to us!</a><a class="inline-block px-4 py-3 text-xs font-semibold leading-none bg-blue-600 hover:bg-blue-700 text-white rounded" href="https://savvycal.com/app-maintainers/kapcsolat">Book a video call!</a></div>
+          </nav>
+        </div>
         <div class="hidden navbar-menu relative z-50">
           <div class="navbar-backdrop fixed inset-0 bg-blueGray-800 opacity-25"></div>
-          <nav class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto"><div class="flex items-center mb-8">
-              <a class="mr-auto text-3xl font-semibold leading-none" href="#"><img src="images/Screenshot-2021-06-08-at-10-39-25.png" alt="App Maintainers" width="300"></a>
+          <nav class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto">
+            <div class="flex items-center mb-8"><a class="mr-auto text-3xl font-semibold leading-none" href="#"><img src="images/Screenshot-2021-06-08-at-10-39-25.png" alt="App Maintainers" width="300"/></a>
               <button class="navbar-close">
-                <svg class="h-6 w-6 text-blueGray-400 cursor-pointer hover:text-blueGray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg></button>
+                <svg class="h-6 w-6 text-blueGray-400 cursor-pointer hover:text-blueGray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+              </button>
             </div>
             <div>
-              <ul><li class="mb-1"><a class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-600" href="#">Development</a></li>
+              <ul>
+                <li class="mb-1"><a class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-600" href="#">Development</a></li>
                 <li class="mb-1"><a class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-600" href="#">Maintenance</a></li>
                 <li class="mb-1"><a class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-600" href="#">Updates</a></li>
                 <li class="mb-1"><a class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-600" href="#">About us</a></li>
-              </ul><div class="mt-4 pt-6 border-t border-blueGray-100"><a class="block px-4 py-3 mb-3 text-xs text-center font-semibold leading-none bg-blue-600 hover:bg-blue-700 text-white rounded" href="#">Book a video call!</a><a class="block px-4 py-3 mb-2 text-xs text-center text-blue-600 hover:text-blue-700 font-semibold leading-none border border-blue-200 hover:border-blue-300 rounded" href="#">Write to us!</a></div>
+              </ul>
+              <div class="mt-4 pt-6 border-t border-blueGray-100"><a class="block px-4 py-3 mb-3 text-xs text-center font-semibold leading-none bg-blue-600 hover:bg-blue-700 text-white rounded" href="https://savvycal.com/app-maintainers/kapcsolat">Book a video call!</a><a class="block px-4 py-3 mb-2 text-xs text-center text-blue-600 hover:text-blue-700 font-semibold leading-none border border-blue-200 hover:border-blue-300 rounded" href="mailto: info@appmaintainers.com">Write to us!</a></div>
             </div>
             <div class="mt-auto">
+              <p class="my-4 text-xs text-blueGray-400"><span>We develop and maintain custom applications for our long-term partners.</span>                <a class="text-blue-600 hover:text-blue-600 underline" href="#">info@appmaintainers.com</a></p><a class="inline-block px-1" href="#"><img src="metis-assets/icons/facebook-blue.svg" alt=""/></a>              <a class="inline-block px-1" href="#"><img src="metis-assets/icons/twitter-blue.svg" alt=""/></a>              <a class="inline-block px-1" href="#"><img src="metis-assets/icons/instagram-blue.svg" alt=""/></a>
+            </div>
+          </nav>
+        </div>
               <p class="my-4 text-xs text-blueGray-400">
                 <span>We develop and maintain custom applications for our long-term partners.</span>
                 <a class="text-blue-600 hover:text-blue-600 underline" href="#">info@appmaintainers.com</a>
@@ -54,23 +73,30 @@
             </div>
           </nav></div>
       </section>
-    
-      <section><div class="container px-4 mx-auto">
-          <nav class="flex justify-between items-center py-6 hidden
-      "><a class="text-3xl font-semibold leading-none" href="#">App Maintainers</a>
+      <section>
+        <div class="container px-4 mx-auto">
+          <nav class="flex justify-between items-center py-6 hidden"><a class="text-3xl font-semibold leading-none" href="#">App Maintainers</a>
             <div class="lg:hidden">
               <button class="navbar-burger flex items-center py-2 px-3 text-blue-600 hover:text-blue-700 rounded border border-blue-200 hover:border-blue-300">
-                <svg class="fill-current h-4 w-4" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Mobile menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path></svg></button>
+                <svg class="fill-current h-4 w-4" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                  <title>Mobile menu</title>
+                  <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                </svg>
+              </button>
             </div>
-            <ul class="hidden lg:flex lg:items-center lg:w-auto lg:space-x-12"><li><a class="text-sm text-blueGray-400 hover:text-blueGray-500" href="#">Development</a></li>
+            <ul class="hidden lg:flex lg:items-center lg:w-auto lg:space-x-12">
+              <li><a class="text-sm text-blueGray-400 hover:text-blueGray-500" href="#">Development</a></li>
               <li><a class="text-sm text-blueGray-400 hover:text-blueGray-500" href="#">Maintenance</a></li>
               <li><a class="text-sm text-blueGray-400 hover:text-blueGray-500" href="#">Updates</a></li>
               <li><a class="text-sm text-blueGray-400 hover:text-blueGray-500" href="#">About</a></li>
-            </ul><div class="hidden lg:block"><a class="mr-2 inline-block px-4 py-3 text-xs text-blue-600 hover:text-blue-700 font-semibold leading-none border border-blue-200 hover:border-blue-300 rounded" href="#">Send an email!</a><a class="inline-block px-4 py-3 text-xs font-semibold leading-none bg-blue-600 hover:bg-blue-700 text-white rounded" href="#">Book a call!</a></div>
-          </nav><div class="flex flex-wrap items-center -mx-3">
+            </ul>
+            <div class="hidden lg:block"><a class="mr-2 inline-block px-4 py-3 text-xs text-blue-600 hover:text-blue-700 font-semibold leading-none border border-blue-200 hover:border-blue-300 rounded" href="#">Send an email!</a><a class="inline-block px-4 py-3 text-xs font-semibold leading-none bg-blue-600 hover:bg-blue-700 text-white rounded" href="#">Book a call!</a></div>
+          </nav>
+          <div class="flex flex-wrap items-center -mx-3">
             <div class="w-full lg:w-1/2 px-3">
               <div class="py-12">
                 <div class="max-w-lg lg:max-w-md mx-auto lg:mx-0 mb-8 text-center lg:text-left">
+                  <h2 class="text-3xl md:text-4xl mb-4 font-bold font-heading"><span>We do</span>                    <span class="text-blue-600">tailor made software</span>                    <span>development and maintenance</span></h2>
                   <h2 class="text-3xl md:text-4xl mb-4 font-bold font-heading">
                     <span>We XD do</span>
                     <span class="text-blue-600">tailor made software</span>
@@ -78,87 +104,82 @@
                   </h2>
                   <p class="text-blueGray-400 leading-relaxed">Our solutions can be used on any device. You can even make our responsive web applications available as mobile apps.</p>
                 </div>
-                <div class="text-center lg:text-left"><a class="block sm:inline-block py-4 px-8 mb-4 sm:mb-0 sm:mr-3 text-xs text-white text-center font-semibold leading-none bg-blue-600 hover:bg-blue-700 rounded" href="#">Book a video call!</a><a class="block sm:inline-block py-4 px-8 text-xs text-blueGray-500 hover:text-blueGray-600 text-center font-semibold leading-none bg-white border border-blueGray-200 hover:border-blueGray-300 rounded" href="#">(hide me)</a></div>
+                <div class="text-center lg:text-left"><a class="block sm:inline-block py-4 px-8 mb-4 sm:mb-0 sm:mr-3 text-xs text-white text-center font-semibold leading-none bg-blue-600 hover:bg-blue-700 rounded" href="https://savvycal.com/app-maintainers/kapcsolat">Book a video call!</a><a class="block sm:inline-block py-4 px-8 text-xs text-blueGray-500 hover:text-blueGray-600 text-center font-semibold leading-none bg-white border border-blueGray-200 hover:border-blueGray-300 rounded" href="#">(hide me)</a></div>
               </div>
             </div>
             <div class="w-full lg:w-1/2 px-3 mb-12 lg:mb-0">
-              <div class="lg:h-128 flex items-center justify-center">
-                <img class="lg:max-w-lg" src="metis-assets/illustrations/work-tv.png" alt=""></div>
+              <div class="lg:h-128 flex items-center justify-center"><img class="lg:max-w-lg" src="metis-assets/illustrations/work-tv.png" alt=""/></div>
             </div>
           </div>
         </div>
         <div class="hidden navbar-menu relative z-50">
           <div class="navbar-backdrop fixed inset-0 bg-blueGray-800 opacity-25"></div>
-          <nav class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto"><div class="flex items-center mb-8">
-              <a class="mr-auto text-3xl font-semibold leading-none" href="#">App Maintainers</a>
+          <nav class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto">
+            <div class="flex items-center mb-8"><a class="mr-auto text-3xl font-semibold leading-none" href="#">App Maintainers</a>
               <button class="navbar-close">
-                <svg class="h-6 w-6 text-blueGray-400 cursor-pointer hover:text-blueGray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg></button>
+                <svg class="h-6 w-6 text-blueGray-400 cursor-pointer hover:text-blueGray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+              </button>
             </div>
             <div>
-              <ul><li class="mb-1"><a class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-600" href="#">Development</a></li>
+              <ul>
+                <li class="mb-1"><a class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-600" href="#">Development</a></li>
                 <li class="mb-1"><a class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-600" href="#">Maintenance</a></li>
                 <li class="mb-1"><a class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-600" href="#">Updates</a></li>
                 <li class="mb-1"><a class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-600" href="#">About</a></li>
-              </ul><div class="mt-4 pt-6 border-t border-blueGray-100"><a class="block px-4 py-3 mb-3 text-xs text-center font-semibold leading-none bg-blue-600 hover:bg-blue-700 text-white rounded" href="#">Book a call!</a><a class="block px-4 py-3 mb-2 text-xs text-center text-blue-600 hover:text-blue-700 font-semibold leading-none border border-blue-200 hover:border-blue-300 rounded" href="#">Send an email!</a></div>
+              </ul>
+              <div class="mt-4 pt-6 border-t border-blueGray-100"><a class="block px-4 py-3 mb-3 text-xs text-center font-semibold leading-none bg-blue-600 hover:bg-blue-700 text-white rounded" href="#">Book a call!</a><a class="block px-4 py-3 mb-2 text-xs text-center text-blue-600 hover:text-blue-700 font-semibold leading-none border border-blue-200 hover:border-blue-300 rounded" href="#">Send an email!</a></div>
             </div>
             <div class="mt-auto">
-              <p class="my-4 text-xs text-blueGray-400">
-                <span>Send an email!</span>
-                <a class="text-blue-600 hover:text-blue-600 underline" href="#">info@appmaintainers.com</a>
-              </p>
-              <a class="inline-block px-1" href="#">
-                <img src="metis-assets/icons/facebook-blue.svg" alt=""></a>
-              <a class="inline-block px-1" href="#">
-                <img src="metis-assets/icons/twitter-blue.svg" alt=""></a>
-              <a class="inline-block px-1" href="#">
-                <img src="metis-assets/icons/instagram-blue.svg" alt=""></a>
+              <p class="my-4 text-xs text-blueGray-400"><span>Send an email!</span>                <a class="text-blue-600 hover:text-blue-600 underline" href="#">info@appmaintainers.com</a></p><a class="inline-block px-1" href="#"><img src="metis-assets/icons/facebook-blue.svg" alt=""/></a>              <a class="inline-block px-1" href="#"><img src="metis-assets/icons/twitter-blue.svg" alt=""/></a>              <a class="inline-block px-1" href="#"><img src="metis-assets/icons/instagram-blue.svg" alt=""/></a>
             </div>
-          </nav></div>
+          </nav>
+        </div>
       </section>
-    
-      <section class="py-8"><div class="container px-4 mx-auto">
+      <section class="py-8">
+        <div class="container px-4 mx-auto">
           <div class="flex flex-wrap justify-between">
             <div class="flex w-1/2 lg:w-auto py-4">
-              <div class="flex justify-center items-center bg-blueGray-50 rounded-xl h-12 w-12 sm:h-20 sm:w-20">
-                <img class="h-6 sm:h-8" src="metis-assets/icons/user-circle.svg" alt=""></div>
-              <div class="sm:py-2 ml-2 sm:ml-6">
-                <span class="sm:text-2xl font-bold font-heading">8 years</span>
+              <div class="flex justify-center items-center bg-blueGray-50 rounded-xl h-12 w-12 sm:h-20 sm:w-20 text-blue-500">
+                <svg class="h-6 sm:h-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+              </div>
+              <div class="sm:py-2 ml-2 sm:ml-6"><span class="sm:text-2xl font-bold font-heading ">8 years</span>
                 <p class="text-xs sm:text-base text-blueGray-400">Solution building</p>
               </div>
             </div>
             <div class="flex w-1/2 lg:w-auto py-4">
-              <div class="flex justify-center items-center bg-blueGray-50 rounded-xl h-12 w-12 sm:h-20 sm:w-20">
-                <img class="h-6 sm:h-8" src="metis-assets/icons/puzzle.svg" alt=""></div>
-              <div class="sm:py-2 ml-2 sm:ml-6">
-                <span class="sm:text-2xl font-bold font-heading">50+</span>
+              <div class="flex justify-center items-center bg-blueGray-50 rounded-xl h-12 w-12 sm:h-20 sm:w-20"><img class="h-6 sm:h-8" src="metis-assets/icons/puzzle.svg" alt=""/></div>
+              <div class="sm:py-2 ml-2 sm:ml-6"><span class="sm:text-2xl font-bold font-heading">50+</span>
                 <p class="text-xs sm:text-base text-blueGray-400">Finished projects</p>
               </div>
             </div>
             <div class="flex w-1/2 lg:w-auto py-4">
-              <div class="flex justify-center items-center bg-blueGray-50 rounded-xl h-12 w-12 sm:h-20 sm:w-20">
-                <img class="h-6 sm:h-8" src="metis-assets/icons/thumb-up.svg" alt=""></div>
-              <div class="sm:py-2 ml-2 sm:ml-6">
-                <span class="sm:text-2xl font-bold font-heading">27673</span>
+              <div class="flex justify-center items-center bg-blueGray-50 rounded-xl h-12 w-12 sm:h-20 sm:w-20 text-blue-500">
+                <svg class="h-6 sm:h-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+                </svg>
+              </div>
+              <div class="sm:py-2 ml-2 sm:ml-6"><span class="sm:text-2xl font-bold font-heading">27673</span>
                 <p class="text-xs sm:text-base text-blueGray-400">Hours spent well</p>
               </div>
             </div>
             <div class="flex w-1/2 lg:w-auto py-4">
-              <div class="flex justify-center items-center bg-blueGray-50 rounded-xl h-12 w-12 sm:h-20 sm:w-20">
-                <img class="h-6 sm:h-8" src="metis-assets/icons/terminal.svg" alt=""></div>
-              <div class="sm:py-2 ml-2 sm:ml-6">
-                <span class="sm:text-2xl font-bold font-heading">∞</span>
+              <div class="flex justify-center items-center bg-blueGray-50 rounded-xl h-12 w-12 sm:h-20 sm:w-20"><img class="h-6 sm:h-8" src="metis-assets/icons/terminal.svg" alt=""/></div>
+              <div class="sm:py-2 ml-2 sm:ml-6"><span class="sm:text-2xl font-bold font-heading">∞</span>
                 <p class="text-xs sm:text-base text-blueGray-400">Business opportunities</p>
               </div>
             </div>
           </div>
         </div>
       </section>
-    
-      <section class="pt-20 pb-8"><div class="container px-4 mx-auto">
+      <section class="pt-20 pb-8">
+        <div class="container px-4 mx-auto">
           <div class="flex flex-wrap -mx-3">
             <div class="w-full lg:w-1/3 mb-12 md:mb-16 px-3">
-              <div class="max-w-md lg:max-w-xs">
-                <span class="inline-block text-xs py-1 px-3 text-blue-600 font-semibold bg-blue-100 rounded-xl">What you can always expect</span>
+              <div class="max-w-md lg:max-w-xs"><span class="inline-block text-xs py-1 px-3 text-blue-600 font-semibold bg-blue-100 rounded-xl">What you can always expect</span>
                 <h2 class="mt-3 text-3xl md:text-4xl text-blueGray-900 font-bold font-heading">We extend your idea</h2>
               </div>
             </div>
@@ -166,7 +187,10 @@
               <div class="w-full md:w-1/2 px-3 mb-12">
                 <div class="flex flex-col items-start">
                   <div class="p-3 bg-blue-600 rounded-full text-white">
-                    <svg class="w-10 h-10" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 8v8m-4-5v5m-4-2v2m-2 4h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg></div>
+                    <svg class="w-10 h-10" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z"></path>
+                    </svg>
+                  </div>
                   <div class="mt-6">
                     <h3 class="mb-3 text-xl font-semibold font-heading">We provide outstanding knowledge</h3>
                     <p class="text-blueGray-400 leading-loose">Our team is made up of experienced and helpful developers who do their utmost to ensure that the development process is traceable and effective.</p>
@@ -176,7 +200,10 @@
               <div class="w-full md:w-1/2 px-3 mb-12">
                 <div class="flex flex-col items-start">
                   <div class="p-3 bg-blue-600 rounded-full text-white">
-                    <svg class="w-10 h-10" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"></path></svg></div>
+                    <svg class="w-10 h-10" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"></path>
+                    </svg>
+                  </div>
                   <div class="mt-6">
                     <h3 class="mb-3 text-xl font-semibold font-heading">We think long term</h3>
                     <p class="text-blueGray-400 leading-loose">It is true that we have more than 50+ completed projects behind us, but we are most proud of the business relationships we have had for more than 8 years.</p>
@@ -186,7 +213,10 @@
               <div class="w-full md:w-1/2 px-3 mb-12">
                 <div class="flex flex-col items-start">
                   <div class="p-3 bg-blue-600 rounded-full text-white">
-                    <svg class="w-10 h-10" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg></div>
+                    <svg class="w-10 h-10" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                    </svg>
+                  </div>
                   <div class="mt-6">
                     <h3 class="mb-3 text-xl font-semibold font-heading">We value your experience</h3>
                     <p class="text-blueGray-400 leading-loose">It is not just words that show that we treat our customers as partners. We build on your experience and are happy to work with the tools you are used to if they work.</p>
@@ -196,7 +226,11 @@
               <div class="w-full md:w-1/2 px-3 mb-12">
                 <div class="flex flex-col items-start">
                   <div class="p-3 bg-blue-600 rounded-full text-white">
-                    <svg class="w-10 h-10" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 8v8m-4-5v5m-4-2v2m-2 4h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg></div>
+                    <svg class="w-10 h-10" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                    </svg>
+                  </div>
                   <div class="mt-6">
                     <h3 class="mb-3 text-xl font-semibold font-heading">We ship quickly</h3>
                     <p class="text-blueGray-400 leading-loose">It's hard to believe, but we can deliver software with serious functionality in weeks. Ready, finished, running in a live environment.</p>
@@ -206,7 +240,10 @@
               <div class="w-full md:w-1/2 px-3 mb-12">
                 <div class="flex flex-col items-start">
                   <div class="p-3 bg-blue-600 rounded-full text-white">
-                    <svg class="w-10 h-10" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"></path></svg></div>
+                    <svg class="w-10 h-10" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                  </div>
                   <div class="mt-6">
                     <h3 class="mb-3 text-xl font-semibold font-heading">We love maintenance</h3>
                     <p class="text-blueGray-400 leading-loose">Unlike others, we specialised specifically in maintenance at the beginning. Although we now mainly work on new developments, maintenance-type requests are not rare. We are particularly happy about these!</p>
@@ -216,7 +253,10 @@
               <div class="w-full md:w-1/2 px-3 mb-12">
                 <div class="flex flex-col items-start">
                   <div class="p-3 bg-blue-600 rounded-full text-white">
-                    <svg class="w-10 h-10" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg></div>
+                    <svg class="w-10 h-10" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                    </svg>
+                  </div>
                   <div class="mt-6">
                     <h3 class="mb-3 text-xl font-semibold font-heading">We provide flexibility</h3>
                     <p class="text-blueGray-400 leading-loose">We are not asking you to make a long-term commitment. Experience the benefit of our flexibility to adapt to your resource needs!</p>
@@ -227,39 +267,36 @@
           </div>
         </div>
       </section>
-    
-      <section class="py-20"><div class="container px-4 mx-auto">
-          <div class="max-w-lg mx-auto mb-12 text-center">
-            <span class="inline-block py-1 px-3 text-xs font-semibold bg-blue-100 text-blue-600 rounded-xl">Our management</span>
+      <section class="py-20">
+        <div class="container px-4 mx-auto">
+          <div class="max-w-lg mx-auto mb-12 text-center"><span class="inline-block py-1 px-3 text-xs font-semibold bg-blue-100 text-blue-600 rounded-xl">Our management</span>
             <h2 class="text-3xl md:text-4xl mt-2 mb-4 font-bold font-heading">We understand the language of business and IT</h2>
             <p class="text-blueGray-400 leading-loose">Our founders have been in the digital space for a long time, but they speak the language of customers as well as computers.</p>
           </div>
           <div class="flex flex-wrap -mx-3 -mb-12">
-            <div class="lg:w-1/2 flex flex-col md:flex-row px-3 mb-12">
-              <img class="h-64 w-64 rounded object-cover" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60" alt=""><div class="pt-6 md:pt-2 md:pl-6">
+            <div class="lg:w-1/2 flex flex-col md:flex-row px-3 mb-12"><img class="h-64 w-64 rounded object-cover" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60" alt=""/>
+              <div class="pt-6 md:pt-2 md:pl-6">
                 <p class="text-xl">Erdős Bence</p>
                 <p class="my-2 text-blue-600">Operational lead</p>
                 <p class="leading-loose text-blueGray-400">Donec consequat tortor risus, at auctor felis consequat a. Donec quis dolor sem. Sed sollicitudin magna in hendrerit pulvinar. Vestibulum non quam velit.</p>
               </div>
             </div>
-            <div class="lg:w-1/2 flex flex-col md:flex-row px-3 mb-12">
-              <img class="h-64 w-64 rounded object-cover" src="images/attila.jpg" alt=""><div class="pt-6 md:pt-2 md:pl-6">
+            <div class="lg:w-1/2 flex flex-col md:flex-row px-3 mb-12"><img class="h-64 w-64 rounded object-cover" src="images/attila.jpg" alt=""/>
+              <div class="pt-6 md:pt-2 md:pl-6">
                 <p class="text-xl">Juhász Attila</p>
                 <p class="my-2 text-sm text-blue-600">Technical lead</p>
                 <p class="leading-loose text-blueGray-400">I always watch with excitement and curiosity as a new product is created from scratch during development.My 20 years of development experience, leadership and coaching skills help our projects succeed.</p>
               </div>
             </div>
-            <div class="lg:w-1/2 flex flex-col md:flex-row px-3 mb-12 hidden
-      ">
-              <img class="h-64 w-64 rounded object-cover" src="https://images.unsplash.com/photo-1584308972272-9e4e7685e80f?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60" alt=""><div class="pt-6 md:pt-2 md:pl-6">
+            <div class="lg:w-1/2 flex flex-col md:flex-row px-3 mb-12 hidden"><img class="h-64 w-64 rounded object-cover" src="https://images.unsplash.com/photo-1584308972272-9e4e7685e80f?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60" alt=""/>
+              <div class="pt-6 md:pt-2 md:pl-6">
                 <p class="text-xl">Anne Jones</p>
                 <p class="my-2 text-sm text-blue-600">Head of Operations</p>
                 <p class="leading-loose text-blueGray-400">Donec consequat tortor risus, at auctor felis consequat a. Donec quis dolor sem. Sed sollicitudin magna in hendrerit pulvinar. Vestibulum non quam velit.</p>
               </div>
             </div>
-            <div class="lg:w-1/2 flex flex-col md:flex-row px-3 mb-12 hidden
-      ">
-              <img class="h-64 w-64 rounded object-cover" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60" alt=""><div class="pt-6 md:pt-2 md:pl-6">
+            <div class="lg:w-1/2 flex flex-col md:flex-row px-3 mb-12 hidden"><img class="h-64 w-64 rounded object-cover" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60" alt=""/>
+              <div class="pt-6 md:pt-2 md:pl-6">
                 <p class="text-xl">Julie Bailey</p>
                 <p class="my-2 text-sm text-blue-600">Head of Development</p>
                 <p class="leading-loose text-blueGray-400">Donec consequat tortor risus, at auctor felis consequat a. Donec quis dolor sem. Sed sollicitudin magna in hendrerit pulvinar. Vestibulum non quam velit.</p>
@@ -268,34 +305,33 @@
           </div>
         </div>
       </section>
-    
-      <section class="pt-20 pb-24 bg-blue-600"><div class="container px-4 mx-auto">
-          <div class="max-w-xl mx-auto text-center">
-            <span class="inline-block text-xs py-1 px-3 bg-blue-500 text-white font-semibold rounded-xl">Let's get started!</span>
+      <section class="pt-20 pb-24 bg-blue-600">
+        <div class="container px-4 mx-auto">
+          <div class="max-w-xl mx-auto text-center"><span class="inline-block text-xs py-1 px-3 bg-blue-500 text-white font-semibold rounded-xl">Let's get started!</span>
             <h2 class="my-3 text-3xl md:text-4xl text-white font-bold font-heading">Give yourself 20 minutes and talk to us about your project!</h2>
             <p class="text-sm md:text-base text-white">We know that every start is difficult. We are open and interested partners who understand the language of business and technology. We are happy to help you define your next step!</p>
-            <div class="mt-10"><a class="inline-block py-4 px-8 text-xs text-blue-600 hover:text-white font-semibold leading-none bg-white hover:bg-blue-600 border hover:border-white rounded transition duration-300" href="#">Book a video call!</a></div>
+            <div class="mt-10"><a class="inline-block py-4 px-8 text-xs text-blue-600 hover:text-white font-semibold leading-none bg-white hover:bg-blue-600 border hover:border-white rounded transition duration-300" href="https://savvycal.com/app-maintainers/kapcsolat">Book a video call!</a></div>
           </div>
         </div>
       </section>
-    
       <div class="container mx-auto">
-      <h2 class="text-4xl mb-2 leading-tight font-bold font-heading text-center md:pt-32 pt-12">Clients to be proud of</h2>
+        <h2 class="text-4xl mb-2 leading-tight font-bold font-heading text-center md:pt-32 pt-12">Clients to be proud of</h2>
       </div>
-    
-      <section class="py-12 md:py-32 overflow-x-hidden"><div class="container px-4 mx-auto">
+      <section class="py-12 md:py-32 overflow-x-hidden">
+        <div class="container px-4 mx-auto">
           <div class="flex flex-wrap lg:flex-nowrap">
-            <div class="relative w-full lg:w-1/2 order-1 lg:order-0 my-12 lg:my-0">
-              <img class="relative mx-auto rounded-xl w-full z-10" src="images/Screenshot-2021-06-11-at-10-32-35.png" alt=""><img class="absolute top-0 left-0 w-40 -ml-12 -mt-12" src="metis-assets/elements/blob-tear.svg" alt=""><img class="absolute bottom-0 right-0 w-40 -mr-12 -mb-12" src="metis-assets/elements/blob-tear.svg" alt=""></div>
+            <div class="relative w-full lg:w-1/2 order-1 lg:order-0 my-12 lg:my-0"><img class="relative mx-auto rounded-xl w-full z-10" src="images/Screenshot-2021-06-11-at-10-32-35.png" alt=""/><img class="absolute top-0 left-0 w-40 -ml-12 -mt-12" src="metis-assets/elements/blob-tear.svg" alt=""/><img class="absolute bottom-0 right-0 w-40 -mr-12 -mb-12" src="metis-assets/elements/blob-tear.svg" alt=""/></div>
             <div class="w-full lg:w-1/2 lg:order-1">
               <div class="py-6 lg:pl-32">
-                <div class="mb-4">
-                  <span class="text-xs py-1 px-3 text-blue-600 font-semibold bg-blue-50 rounded-xl">Startup</span>
+                <div class="mb-4"><span class="text-xs py-1 px-3 text-blue-600 font-semibold bg-blue-50 rounded-xl">Startup</span>
                   <h2 class="text-4xl mt-3 font-bold font-heading">Kinteract</h2>
                 </div>
                 <div class="flex items-start py-4">
                   <div class="w-8 mr-5 text-blue-500">
-                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg></div>
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                    </svg>
+                  </div>
                   <div>
                     <h3 class="mb-2 text-xl font-semibold font-heading">Easy to customize</h3>
                     <p class="text-blueGray-400 leading-loose">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis expedita animi.</p>
@@ -303,7 +339,10 @@
                 </div>
                 <div class="flex items-start py-4">
                   <div class="w-8 mr-5 text-blue-500">
-                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"></path></svg></div>
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"></path>
+                    </svg>
+                  </div>
                   <div>
                     <h3 class="mb-2 text-xl font-semibold font-heading">Flexible software</h3>
                     <p class="text-blueGray-400 leading-loose">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis expedita animi.</p>
@@ -311,7 +350,10 @@
                 </div>
                 <div class="flex items-start py-4">
                   <div class="w-8 mr-5 text-blue-500">
-                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z"></path></svg></div>
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z"></path>
+                    </svg>
+                  </div>
                   <div>
                     <h3 class="mb-2 text-xl font-semibold font-heading">Best access for all of the resources</h3>
                     <p class="text-blueGray-400 leading-loose">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis expedita animi.</p>
@@ -322,18 +364,20 @@
           </div>
         </div>
       </section>
-    
-      <section class="py-12 md:py-32 overflow-x-hidden"><div class="container px-4 mx-auto">
+      <section class="py-12 md:py-32 overflow-x-hidden">
+        <div class="container px-4 mx-auto">
           <div class="flex flex-wrap lg:flex-nowrap">
             <div class="w-full lg:w-1/2">
               <div class="py-6 lg:pr-32">
-                <div class="mb-4">
-                  <span class="text-xs py-1 px-3 text-blue-600 font-semibold bg-blue-50 rounded-xl">NGO</span>
-                  <h2 class="text-4xl mt-3 font-bold font-heading">UNHCR</h2>
+                <div class="mb-4"><span class="text-xs py-1 px-3 text-blue-600 font-semibold bg-blue-50 rounded-xl">NGO</span>
+                  <h2 class="text-4xl mt-3 font-bold font-heading">UN Refugee Agency</h2>
                 </div>
                 <div class="flex items-start py-4">
                   <div class="w-8 mr-5 text-blue-500">
-                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg></div>
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                    </svg>
+                  </div>
                   <div>
                     <h3 class="mb-2 text-xl font-semibold font-heading">Easy to customize</h3>
                     <p class="text-blueGray-400 leading-loose">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis expedita animi.</p>
@@ -341,7 +385,10 @@
                 </div>
                 <div class="flex items-start py-4">
                   <div class="w-8 mr-5 text-blue-500">
-                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"></path></svg></div>
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"></path>
+                    </svg>
+                  </div>
                   <div>
                     <h3 class="mb-2 text-xl font-semibold font-heading">Flexible software</h3>
                     <p class="text-blueGray-400 leading-loose">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis expedita animi.</p>
@@ -349,7 +396,10 @@
                 </div>
                 <div class="flex items-start py-4">
                   <div class="w-8 mr-5 text-blue-500">
-                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z"></path></svg></div>
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z"></path>
+                    </svg>
+                  </div>
                   <div>
                     <h3 class="mb-2 text-xl font-semibold font-heading">Best access for all of the resources</h3>
                     <p class="text-blueGray-400 leading-loose">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis expedita animi.</p>
@@ -357,20 +407,15 @@
                 </div>
               </div>
             </div>
-            <div class="relative w-full lg:w-1/2 my-12 lg:my-0">
-              <img class="relative mx-auto rounded-xl w-full z-10 border-2 border-gray-600" src="images/Screenshot-2021-06-11-at-10-49-36.png" alt=""><img class="absolute top-0 left-0 w-40 -ml-12 -mt-12" src="metis-assets/elements/blob-tear.svg" alt=""><img class="absolute bottom-0 right-0 w-40 -mr-12 -mb-12" src="metis-assets/elements/blob-tear.svg" alt=""></div>
+            <div class="relative w-full lg:w-1/2 my-12 lg:my-0"><img class="relative mx-auto rounded-xl w-full z-10 border-2 border-gray-600" src="images/Screenshot-2021-06-11-at-10-49-36.png" alt=""/><img class="absolute top-0 left-0 w-40 -ml-12 -mt-12" src="metis-assets/elements/blob-tear.svg" alt=""/><img class="absolute bottom-0 right-0 w-40 -mr-12 -mb-12" src="metis-assets/elements/blob-tear.svg" alt=""/></div>
           </div>
         </div>
       </section>
-    
-      <section class="pt-16 pb-20 bg-blueGray-50"><div class="container px-4 mx-auto">
+      <section class="pt-16 pb-20 bg-blueGray-50">
+        <div class="container px-4 mx-auto">
           <div class="flex flex-wrap items-center mb-12">
             <div class="w-full lg:w-1/2 mb-6 lg:mb-0">
-              <h2 class="text-4xl font-bold font-heading">
-                <span>Digital skills with </span>
-                <span class="text-blue-600">business potential </span>
-                <span>that you can build with us.</span>
-              </h2>
+              <h2 class="text-4xl font-bold font-heading"><span>Digital skills with </span>                <span class="text-blue-600">business potential </span>                <span>that you can build with us.</span></h2>
             </div>
             <div class="w-full lg:w-1/2">
               <p class="lg:pl-16 text-blueGray-400 leading-loose"> </p>
@@ -379,38 +424,53 @@
           <div class="flex flex-wrap -mx-3 -mb-6">
             <div class="w-full md:w-1/2 lg:w-1/4 px-3 mb-6">
               <div class="pt-8 px-6 pb-6 bg-white text-center rounded shadow">
-                <svg class="w-10 h-10 mx-auto mb-4 text-blue-600" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"></path></svg><h3 class="mb-2 font-bold font-heading">Online service, content management</h3>
+                <svg class="w-10 h-10 mx-auto mb-4 text-blue-600" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"></path>
+                </svg>
+                <h3 class="mb-2 font-bold font-heading">Online service, content management</h3>
                 <p class="text-sm text-blueGray-400">We build, integrate and operate your unique web service.</p>
               </div>
             </div>
             <div class="w-full md:w-1/2 lg:w-1/4 px-3 mb-6">
               <div class="pt-8 px-6 pb-6 bg-white text-center rounded shadow">
-                <svg class="w-10 h-10 mx-auto mb-4 text-blue-600" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V8a2 2 0 00-2-2h-5m-4 0V5a2 2 0 114 0v1m-4 0a2 2 0 104 0m-5 8a2 2 0 100-4 2 2 0 000 4zm0 0c1.306 0 2.417.835 2.83 2M9 14a3.001 3.001 0 00-2.83 2M15 11h3m-3 4h2"></path></svg><h3 class="mb-2 font-bold font-heading">Internal administration</h3>
+                <svg class="w-10 h-10 mx-auto mb-4 text-blue-600" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V8a2 2 0 00-2-2h-5m-4 0V5a2 2 0 114 0v1m-4 0a2 2 0 104 0m-5 8a2 2 0 100-4 2 2 0 000 4zm0 0c1.306 0 2.417.835 2.83 2M9 14a3.001 3.001 0 00-2.83 2M15 11h3m-3 4h2"></path>
+                </svg>
+                <h3 class="mb-2 font-bold font-heading">Internal administration</h3>
                 <p class="text-sm text-blueGray-400">A customized system with a simple interface can speed up and simplify the management and administration of company processes.</p>
               </div>
             </div>
             <div class="w-full md:w-1/2 lg:w-1/4 px-3 mb-6">
               <div class="pt-8 px-6 pb-6 bg-white text-center rounded shadow">
-                <svg class="w-10 h-10 mx-auto mb-4 text-blue-600" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg><h3 class="mb-2 font-bold font-heading">Backend API</h3>
+                <svg class="w-10 h-10 mx-auto mb-4 text-blue-600" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                </svg>
+                <h3 class="mb-2 font-bold font-heading">Backend API</h3>
                 <p class="text-sm text-blueGray-400">Do you need a central system to which your different applications can connect? Want to connect to external services? We can help.</p>
               </div>
             </div>
             <div class="w-full md:w-1/2 lg:w-1/4 px-3 mb-6">
               <div class="pt-8 px-6 pb-6 bg-white text-center rounded shadow">
-                <svg class="w-10 h-10 mx-auto mb-4 text-blue-600" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg><h3 class="mb-2 font-bold font-heading">Central system for hardware devices</h3>
+                <svg class="w-10 h-10 mx-auto mb-4 text-blue-600" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                </svg>
+                <h3 class="mb-2 font-bold font-heading">Central system for hardware devices</h3>
                 <p class="text-sm text-blueGray-400">Do you have tools and want to make them available in a single interface?</p>
               </div>
             </div>
           </div>
         </div>
       </section>
-    
-      <section class="pt-20 pb-12 md:pb-8"><div class="container px-4 mx-auto">
+      <section class="pt-20 pb-12 md:pb-8">
+        <div class="container px-4 mx-auto">
           <div class="flex flex-wrap -mx-3">
             <div class="w-full md:w-1/2 lg:w-1/3 px-3 mb-8 md:mb-12">
               <div class="flex items-start">
                 <div class="mr-6 p-3 bg-blue-600 rounded-full text-white">
-                  <svg class="w-10 h-10" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 8v8m-4-5v5m-4-2v2m-2 4h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg></div>
+                  <svg class="w-10 h-10" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 8v8m-4-5v5m-4-2v2m-2 4h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                  </svg>
+                </div>
                 <div class="mt-4">
                   <h3 class="mb-3 text-xl font-semibold font-heading">User management</h3>
                   <p class="text-blueGray-400 leading-loose">Create a central location for user data and permissions!</p>
@@ -420,9 +480,12 @@
             <div class="w-full md:w-1/2 lg:w-1/3 px-3 mb-8 md:mb-12">
               <div class="flex items-start">
                 <div class="mr-6 p-3 bg-blue-600 rounded-full text-white">
-                  <svg class="w-10 h-10" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"></path></svg></div>
+                  <svg class="w-10 h-10" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"></path>
+                  </svg>
+                </div>
                 <div class="mt-4">
-                  <h3 class="mb-3 text-xl font-semibold font-heading">Monitoring &amp; metrics</h3>
+                  <h3 class="mb-3 text-xl font-semibold font-heading">Monitoring & metrics</h3>
                   <p class="text-blueGray-400 leading-loose">Create software to track business events and display the results!</p>
                 </div>
               </div>
@@ -430,9 +493,12 @@
             <div class="w-full md:w-1/2 lg:w-1/3 px-3 mb-8 md:mb-12">
               <div class="flex items-start">
                 <div class="mr-6 p-3 bg-blue-600 rounded-full text-white">
-                  <svg class="w-10 h-10" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg></div>
+                  <svg class="w-10 h-10" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                  </svg>
+                </div>
                 <div class="mt-4">
-                  <h3 class="mb-3 text-xl font-semibold font-heading">Email &amp; SMS delivery</h3>
+                  <h3 class="mb-3 text-xl font-semibold font-heading">Email & SMS delivery</h3>
                   <p class="text-blueGray-400 leading-loose">Send an email when business events occur. Send SMS to your priority customers!</p>
                 </div>
               </div>
@@ -440,9 +506,12 @@
             <div class="w-full md:w-1/2 lg:w-1/3 px-3 mb-8 md:mb-12">
               <div class="flex items-start">
                 <div class="mr-6 p-3 bg-blue-600 rounded-full text-white">
-                  <svg class="w-10 h-10" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg></div>
+                  <svg class="w-10 h-10" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                  </svg>
+                </div>
                 <div class="mt-4">
-                  <h3 class="mb-3 text-xl font-semibold font-heading">Video &amp; image processing</h3>
+                  <h3 class="mb-3 text-xl font-semibold font-heading">Video & image processing</h3>
                   <p class="text-blueGray-400 leading-loose">Manage documents, images, videos and display them in the place and format you want!</p>
                 </div>
               </div>
@@ -450,7 +519,10 @@
             <div class="w-full md:w-1/2 lg:w-1/3 px-3 mb-8 md:mb-12">
               <div class="flex items-start">
                 <div class="mr-6 p-3 bg-blue-600 rounded-full text-white">
-                  <svg class="w-10 h-10" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path></svg></div>
+                  <svg class="w-10 h-10" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path>
+                  </svg>
+                </div>
                 <div class="mt-4">
                   <h3 class="mb-3 text-xl font-semibold font-heading">Data processing</h3>
                   <p class="text-blueGray-400 leading-loose">Do you have to process huge amounts of data periodically? Create a custom solution!</p>
@@ -460,7 +532,10 @@
             <div class="w-full md:w-1/2 lg:w-1/3 px-3 mb-8 md:mb-12">
               <div class="flex items-start">
                 <div class="mr-6 p-3 bg-blue-600 rounded-full text-white">
-                  <svg class="w-10 h-10" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 8v8m-4-5v5m-4-2v2m-2 4h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg></div>
+                  <svg class="w-10 h-10" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
+                  </svg>
+                </div>
                 <div class="mt-4">
                   <h3 class="mb-3 text-xl font-semibold font-heading">Error handling</h3>
                   <p class="text-blueGray-400 leading-loose">Want to be informed about errors your customers may encounter? Do you want your developers to react within the framework of your SLA? Ask us for a quote!</p>
@@ -470,7 +545,10 @@
             <div class="w-full md:w-1/2 lg:w-1/3 px-3 mb-8 md:mb-12">
               <div class="flex items-start">
                 <div class="mr-6 p-3 bg-blue-600 rounded-full text-white">
-                  <svg class="w-10 h-10" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg></div>
+                  <svg class="w-10 h-10" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                  </svg>
+                </div>
                 <div class="mt-4">
                   <h3 class="mb-3 text-xl font-semibold font-heading">Search</h3>
                   <p class="text-blueGray-400 leading-loose">Do you have data but can't find anything in it? Make it searchable and unlock its potential!</p>
@@ -480,7 +558,10 @@
             <div class="w-full md:w-1/2 lg:w-1/3 px-3 mb-8 md:mb-12">
               <div class="flex items-start">
                 <div class="mr-6 p-3 bg-blue-600 rounded-full text-white">
-                  <svg class="w-10 h-10" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg></div>
+                  <svg class="w-10 h-10" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                  </svg>
+                </div>
                 <div class="mt-4">
                   <h3 class="mb-3 text-xl font-semibold font-heading">API integration</h3>
                   <p class="text-blueGray-400 leading-loose">Have you noticed a practical service you would like to integrate? We can help!</p>
@@ -490,7 +571,10 @@
             <div class="w-full md:w-1/2 lg:w-1/3 px-3 mb-8 md:mb-12">
               <div class="flex items-start">
                 <div class="mr-6 p-3 bg-blue-600 rounded-full text-white">
-                  <svg class="w-10 h-10" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"></path></svg></div>
+                  <svg class="w-10 h-10" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+                  </svg>
+                </div>
                 <div class="mt-4">
                   <h3 class="mb-3 text-xl font-semibold font-heading">Security</h3>
                   <p class="text-blueGray-400 leading-loose">Want to sleep easy knowing the platform you've built is up to date and fresh?</p>
@@ -500,48 +584,34 @@
           </div>
         </div>
       </section>
-    
-      <section class="pt-20 pb-24 bg-blueGray-100"><div class="container px-4 mx-auto">
-          <div class="max-w-xl mx-auto text-center">
-            <span class="inline-block py-1 px-3 text-xs md:text-sm rounded-xl bg-blue-50 text-blue-600 font-semibold">Let's get started!</span>
+      <section class="pt-20 pb-24 bg-blueGray-100">
+        <div class="container px-4 mx-auto">
+          <div class="max-w-xl mx-auto text-center"><span class="inline-block py-1 px-3 text-xs md:text-sm rounded-xl bg-blue-50 text-blue-600 font-semibold">Let's get started!</span>
             <h2 class="my-2 text-3xl md:text-4xl font-bold font-heading">Has something caught your attention? Take the first step and contact us!</h2>
-            <div class="mt-6"><a class="block sm:inline-block py-4 px-8 mb-4 sm:mb-0 sm:mr-3 text-xs text-white text-center font-semibold leading-none bg-blue-600 hover:bg-blue-700 rounded" href="#">Book a video call!</a><a class="block sm:inline-block py-4 px-8 text-xs text-blueGray-500 hover:text-blueGray-600 text-center font-semibold leading-none bg-white border border-blueGray-200 hover:border-blueGray-300 rounded" href="#">Write to us!</a></div>
+            <div class="mt-6"><a class="block sm:inline-block py-4 px-8 mb-4 sm:mb-0 sm:mr-3 text-xs text-white text-center font-semibold leading-none bg-blue-600 hover:bg-blue-700 rounded" href="https://savvycal.com/app-maintainers/kapcsolat">Book a video call!</a><a class="block sm:inline-block py-4 px-8 text-xs text-blueGray-500 hover:text-blueGray-600 text-center font-semibold leading-none bg-white border border-blueGray-200 hover:border-blueGray-300 rounded" href="mailto: info@appmaintainers.com">Write to us!</a></div>
           </div>
         </div>
       </section>
-    
-      <section class="py-20"><div class="container px-4 mx-auto">
+      <section class="py-20">
+        <div class="container px-4 mx-auto">
           <div class="flex flex-wrap mb-12 lg:mb-20 -mx-3 text-center lg:text-left">
-            <div class="w-full lg:w-1/5 px-3 mb-6 lg:mb-0">
-              <a class="inline-block mx-auto lg:mx-0 text-3xl font-semibold leading-none" href="#"><img src="images/Screen-Shot-2012-11-06-at-3-08-56-PM.png" alt="App Maintainers" width="100"></a>
-            </div>
+            <div class="w-full lg:w-1/5 px-3 mb-6 lg:mb-0"><a class="inline-block mx-auto lg:mx-0 text-3xl font-semibold leading-none" href="#"><img src="images/Screen-Shot-2012-11-06-at-3-08-56-PM.png" alt="App Maintainers" width="100"/></a></div>
             <div class="w-full lg:w-2/5 px-3 mb-8 lg:mb-0">
               <p class="max-w-md mx-auto lg:max-w-full lg:mx-0 lg:pr-32 lg:text-lg text-blueGray-400 leading-relaxed">We develop and maintain custom applications for our long-term partners.</p>
             </div>
             <div class="w-full lg:w-1/5 px-3 mb-8 lg:mb-0">
-              <p class="mb-2 lg:mb-4 lg:text-lg font-bold font-heading text-blueGray-800">Office</p>
-              <p class="lg:text-lg text-blueGray-400">1115, BUDAPEST, Ildikó utca 24, HUNGARY</p>
+              <p class="mb-2 lg:mb-4 lg:text-lg font-bold font-heading text-blueGray-800">Office</p><a class="lg:text-lg text-blueGray-400 hover:text-red-400 hover:underline" href="https://goo.gl/maps/3KtRZSFwPMCek1Ry9" target="_blank">1115, BUDAPEST, Ildikó utca 24, HUNGARY</a>
             </div>
             <div class="w-full lg:w-1/5 px-3">
-              <p class="mb-2 lg:mb-4 lg:text-lg font-bold font-heading text-blueGray-800">Contact</p>
-              <p class="lg:text-lg text-blueGray-400">info@appmaintainers.com</p>
+              <p class="mb-2 lg:mb-4 lg:text-lg font-bold font-heading text-blueGray-800">Contact</p><a class="lg:text-lg text-blueGray-400 hover:text-red-400 hover:underline" href="mailto: info@appmaintainers.com">info@appmaintainers.com</a>
             </div>
           </div>
           <div class="flex flex-col lg:flex-row items-center lg:justify-between">
             <p class="text-xs text-blueGray-400">© 2021. All rights reserved.</p>
-            <div class="order-first lg:order-last -mx-2 mb-4 lg:mb-0 hidden
-      ">
-              <a class="inline-block px-2" href="#">
-                <img src="metis-assets/icons/facebook-blue.svg" alt=""></a>
-              <a class="inline-block px-2" href="#">
-                <img src="metis-assets/icons/twitter-blue.svg" alt=""></a>
-              <a class="inline-block px-2" href="#">
-                <img src="metis-assets/icons/instagram-blue.svg" alt=""></a>
-            </div>
+            <div class="order-first lg:order-last -mx-2 mb-4 lg:mb-0 hidden"><a class="inline-block px-2" href="#"><img src="metis-assets/icons/facebook-blue.svg" alt=""/></a>              <a class="inline-block px-2" href="#"><img src="metis-assets/icons/twitter-blue.svg" alt=""/></a>              <a class="inline-block px-2" href="#"><img src="metis-assets/icons/instagram-blue.svg" alt=""/></a></div>
           </div>
         </div>
       </section>
     </div>
   </body>
 </html>
-
