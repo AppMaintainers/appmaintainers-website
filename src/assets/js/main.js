@@ -1,5 +1,36 @@
 // Burger menus
+
+function setHunDefault(){
+	localStorage.setItem("languagePreference", "HUN");
+}
+function setEnDefault(){
+	localStorage.setItem("languagePreference", "ENG");
+	console.log("SET");
+}
 document.addEventListener('DOMContentLoaded', function() {
+	//language
+	var firstTime = localStorage.getItem("first_time");
+	var language = window.navigator.userLanguage || window.navigator.language;
+	if((localStorage.getItem("languagePreference") == null) && language == "hu-HU"){
+		if(!document.URL.includes("hu_index.html")){
+            window.location.href="hu_index.html";
+			localStorage.setItem("hunBrowser", new Date());
+			console.log("1");
+        }
+	}
+	else if(localStorage.getItem("languagePreference") === "HUN"){
+		if(!document.URL.includes("hu_index.html")){
+            window.location.href="hu_index.html";
+			console.log("2");
+		}
+	}
+	else if(localStorage.getItem("languagePreference") === "ENG"){
+		if(document.URL.includes("hu")){
+			console.log(document.URL);
+            window.location.href="index.html";
+			console.log("3");
+		}
+	}
     // open
     const burger = document.querySelectorAll('.navbar-burger');
     const menu = document.querySelectorAll('.navbar-menu');
@@ -38,3 +69,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 });
+
+
+

@@ -34,7 +34,7 @@ html(lang="hu")
                             li(class="")
                                 a(class="text-sm text-blueGray-400 hover:text-blueGray-500 hidden", href="#") Rólunk
                         div(class="hidden lg:block")
-                            a(class="mr-2 inline-block px-4 py-3 text-xs text-blue-600 hover:text-blue-700 font-semibold leading-none border border-blue-200 hover:border-blue-300 rounded" href="index.html") EN
+                            a(class="mr-2 inline-block px-4 py-3 text-xs text-blue-600 hover:text-blue-700 font-semibold leading-none border border-blue-200 hover:border-blue-300 rounded" href="index.html", onclick="setEnDefault()") EN
                             a(class="mr-2 inline-block px-4 py-3 text-xs text-blue-600 hover:text-blue-700 font-semibold leading-none border border-blue-200 hover:border-blue-300 rounded", href="mailto: info@appmaintainers.com") Írjon nekünk!
                             a(class="inline-block px-4 py-3 text-xs font-semibold leading-none bg-blue-600 hover:bg-blue-700 text-white rounded", href="https://savvycal.com/app-maintainers/kapcsolat") Foglaljon videóhívás időpontot!
                 div(class="hidden navbar-menu relative z-50")
@@ -148,8 +148,9 @@ html(lang="hu")
                 div(class="container px-4 mx-auto")
                     div(class="flex flex-wrap justify-between")
                         div(class="flex w-1/2 lg:w-auto py-4")
-                            div(class="flex justify-center items-center bg-blueGray-50 rounded-xl h-12 w-12 sm:h-20 sm:w-20")
-                                img(class="h-6 sm:h-8", src="metis-assets/icons/user-circle.svg", alt="")
+                            div(class="flex justify-center items-center bg-blueGray-50 rounded-xl h-12 w-12 sm:h-20 sm:w-20 text-blue-500")
+                                svg(class="h-6 sm:h-8", xmlns="http://www.w3.org/2000/svg", fill="none", viewbox="0 0 24 24", stroke="currentColor")
+                                    path(stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z")
                             div(class="sm:py-2 ml-2 sm:ml-6")
                                 span(class="sm:text-2xl font-bold font-heading") 8 év
                                 p(class="text-xs sm:text-base text-blueGray-400") Közös gondolkodás
@@ -160,8 +161,9 @@ html(lang="hu")
                                 span(class="sm:text-2xl font-bold font-heading") 50+
                                 p(class="text-xs sm:text-base text-blueGray-400") Megvalósult projekt
                         div(class="flex w-1/2 lg:w-auto py-4")
-                            div(class="flex justify-center items-center bg-blueGray-50 rounded-xl h-12 w-12 sm:h-20 sm:w-20")
-                                img(class="h-6 sm:h-8", src="metis-assets/icons/thumb-up.svg", alt="")
+                            div(class="flex justify-center items-center bg-blueGray-50 rounded-xl h-12 w-12 sm:h-20 sm:w-20 text-blue-500")
+                                svg(class="h-6 sm:h-8", xmlns="http://www.w3.org/2000/svg", fill="none", viewbox="0 0 24 24", stroke="currentColor")
+                                    path(stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6")
                             div(class="sm:py-2 ml-2 sm:ml-6")
                                 span(class="sm:text-2xl font-bold font-heading") 27673
                                 p(class="text-xs sm:text-base text-blueGray-400") Munkaóra
@@ -183,7 +185,7 @@ html(lang="hu")
                                 div(class="flex flex-col items-start")
                                     div(class="p-3 bg-blue-600 rounded-full text-white")
                                         svg(class="w-10 h-10", xmlns="http://www.w3.org/2000/svg", fill="none", viewbox="0 0 24 24", stroke="currentColor")
-                                            path(stroke-linecap="round", stroke-linejoin="round", stroke-width="2", d="M16 8v8m-4-5v5m-4-2v2m-2 4h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z")
+                                            path(stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z")
                                     div(class="mt-6")
                                         h3(class="mb-3 text-xl font-semibold font-heading") Kiemelkedő tudást adunk
                                         p(class="text-blueGray-400 leading-loose") Csapatunkat tapasztalt és segítőkész fejlesztők alkotják, akik megtesznek mindent, hogy a fejlesztés követhető és eredményes legyen.
@@ -208,7 +210,8 @@ html(lang="hu")
                                 div(class="flex flex-col items-start")
                                     div(class="p-3 bg-blue-600 rounded-full text-white")
                                         svg(class="w-10 h-10", xmlns="http://www.w3.org/2000/svg", fill="none", viewbox="0 0 24 24", stroke="currentColor")
-                                            path(stroke-linecap="round", stroke-linejoin="round", stroke-width="2", d="M16 8v8m-4-5v5m-4-2v2m-2 4h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z")
+                                            path(stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z")
+                                            path(stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z")
                                     div(class="mt-6")
                                         h3(class="mb-3 text-xl font-semibold font-heading") Gyorsan érünk el eredményeket
                                         p(class="text-blueGray-400 leading-loose") Nehéz elhinni, de akár hetek alatt is komoly funkcionalitású szoftvert tudunk szállítani. Készen, befejezve, éles környezetben futtatva.
@@ -216,7 +219,7 @@ html(lang="hu")
                                 div(class="flex flex-col items-start")
                                     div(class="p-3 bg-blue-600 rounded-full text-white")
                                         svg(class="w-10 h-10", xmlns="http://www.w3.org/2000/svg", fill="none", viewbox="0 0 24 24", stroke="currentColor")
-                                            path(stroke-linecap="round", stroke-linejoin="round", stroke-width="2", d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z")
+                                            path(stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z")
                                     div(class="mt-6")
                                         h3(class="mb-3 text-xl font-semibold font-heading") Szeretjük a karbantartást
                                         p(class="text-blueGray-400 leading-loose") Másokkal ellentétben, mi kifejezetten karbantartásra szakosodtunk a kezdetekben. Habár ma már főként új fejlesztéseken dolgozunk, nem ritkák a karbantartás típusú felkérések. Ezeknek különösen örülünk!
@@ -395,7 +398,7 @@ html(lang="hu")
                             div(class="flex items-start")
                                 div(class="mr-6 p-3 bg-blue-600 rounded-full text-white")
                                     svg(class="w-10 h-10", xmlns="http://www.w3.org/2000/svg", fill="none", viewbox="0 0 24 24", stroke="currentColor")
-                                        path(stroke-linecap="round", stroke-linejoin="round", stroke-width="2", d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z")
+                                        path(stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z")
                                 div(class="mt-4")
                                     h3(class="mb-3 text-xl font-semibold font-heading") Email és SMS küldés
                                     p(class="text-blueGray-400 leading-loose") Küldjön emailt üzleti események bekövetkezésekor. Küldjön SMS-t kiemelt ügyfeleinek!
@@ -419,7 +422,7 @@ html(lang="hu")
                             div(class="flex items-start")
                                 div(class="mr-6 p-3 bg-blue-600 rounded-full text-white")
                                     svg(class="w-10 h-10", xmlns="http://www.w3.org/2000/svg", fill="none", viewbox="0 0 24 24", stroke="currentColor")
-                                        path(stroke-linecap="round", stroke-linejoin="round", stroke-width="2", d="M16 8v8m-4-5v5m-4-2v2m-2 4h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z")
+                                        path(stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z")
                                 div(class="mt-4")
                                     h3(class="mb-3 text-xl font-semibold font-heading") Hibakezelés
                                     p(class="text-blueGray-400 leading-loose") Szeretne értesülni a hibákról amikkel az ügyfelei találkozhatnak? Szeretné ha a fejlesztői SLA keretében reagálnának? Kérjen ajánlatot tőlünk!
@@ -427,7 +430,7 @@ html(lang="hu")
                             div(class="flex items-start")
                                 div(class="mr-6 p-3 bg-blue-600 rounded-full text-white")
                                     svg(class="w-10 h-10", xmlns="http://www.w3.org/2000/svg", fill="none", viewbox="0 0 24 24", stroke="currentColor")
-                                        path(stroke-linecap="round", stroke-linejoin="round", stroke-width="2", d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z")
+                                        path(stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z")
                                 div(class="mt-4")
                                     h3(class="mb-3 text-xl font-semibold font-heading") Keresés
                                     p(class="text-blueGray-400 leading-loose") Vannak adatai, de nem talál bennük semmit? Tegye kereshetővé és aknázza ki a bennük rejlő potenciált!
@@ -443,7 +446,7 @@ html(lang="hu")
                             div(class="flex items-start")
                                 div(class="mr-6 p-3 bg-blue-600 rounded-full text-white")
                                     svg(class="w-10 h-10", xmlns="http://www.w3.org/2000/svg", fill="none", viewbox="0 0 24 24", stroke="currentColor")
-                                        path(stroke-linecap="round", stroke-linejoin="round", stroke-width="2", d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z")
+                                        path(stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z")
                                 div(class="mt-4")
                                     h3(class="mb-3 text-xl font-semibold font-heading") Biztonság
                                     p(class="text-blueGray-400 leading-loose") Szeretne nyugodtan aludni tudván, hogy  a platform amit épített naprakész és friss?
