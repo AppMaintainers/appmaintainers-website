@@ -28330,6 +28330,22 @@ video {
   --tw-backdrop-sepia: sepia(100%);
 }
 
+.flag-text--inline {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  margin: 0px 8px 0px 0px;
+  img {
+    margin: 0;
+    padding: 12px 16px;
+    transition: margin 500ms;
+  }
+}
+
+.icon {
+  top: 0;
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
