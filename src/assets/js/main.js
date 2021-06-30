@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	else if(localStorage.getItem("languagePreference") === "ENG"){
 		if(document.URL.includes("hu")){
 			console.log(document.URL);
-            window.location.href="../index.html";
+            window.location.href="../";
 		}
 	}
     // open
