@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="hu">
+  <head>
+    {% render "head", metadata: site.data.huntexts %}
+  </head>
+  <body class="antialiased bg-body text-body font-body">
+    {% render "navbar", metadata: site.metadata %}
+
+    <main>
+      {{ content }}
+    </main>
+
+    {% render "footer", metadata: site.metadata %}
+  </body>
+</html>

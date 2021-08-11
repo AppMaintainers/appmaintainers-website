@@ -1,0 +1,57 @@
+<title>AppMaintainers</title>
+<meta property="og:title" content="AppMaintainers">
+<meta property="og:url" content="https://new.appmaintainers.com/">
+<meta property="og:image" content="images/logo_bg.png">
+<meta property="og:type" content="website">
+<meta property="og:description" content="{{ metadata.description }}" >
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="{{ metadata.en_description }}" >
+<meta name="author" content="{{ metadata.company }}">
+<meta name="keywords" content="{{ metadata.keywords }}" >
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="theme-color" content="#ffffff">
+{% if metadata.language == "magyar" %}
+    <meta name="msapplication-TileImage" content="../metis-assets/favicons/ms-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="../metis-assets/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../metis-assets/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../metis-assets/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../metis-assets/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../metis-assets/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../metis-assets/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../metis-assets/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../metis-assets/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../metis-assets/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../metis-assets/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../metis-assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../metis-assets/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../metis-assets/favicons/favicon-16x16.png">
+    <link rel="icon" type="image/svg" sizes="16x16" href="../metis-assets/favicons/favicon.svg">
+    <link crossorigin="use-credentials" rel="manifest" href="../metis-assets/favicons/manifest.json">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="stylesheet" href="../css/tailwind/tailwind.min.css">
+    <script src="../js/main.js"></script>
+{% elsif metadata.language == "english" %}
+    <meta name="msapplication-TileImage" content="metis-assets/favicons/ms-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="metis-assets/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="metis-assets/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="metis-assets/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="metis-assets/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="metis-assets/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="metis-assets/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="metis-assets/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="metis-assets/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="metis-assets/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="metis-assets/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="metis-assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="metis-assets/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="metis-assets/favicons/favicon-16x16.png">
+    <link rel="icon" type="image/svg" sizes="16x16" href="metis-assets/favicons/favicon.svg">
+    <link crossorigin="use-credentials" rel="manifest" href="metis-assets/favicons/manifest.json">
+    <link rel="stylesheet" href="/css/tailwind/tailwind.min.css">
+    <script src="/js/main.js"></script>
+{% endif %}
+
+
+<link rel="stylesheet" href="{% webpack_path css %}" />
+<script src="{% webpack_path js %}" defer></script>

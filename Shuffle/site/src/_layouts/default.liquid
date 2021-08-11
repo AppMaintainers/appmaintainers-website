@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    {% render "head", metadata: site.data.engtexts %}
+  </head>
+  <body class="antialiased bg-body text-body font-body">
+    {% render "navbar", metadata: site.data.engtexts %}
+
+    <main>
+      {{ content }}
+    </main>
+
+    {% render "footer", metadata: site.metadata %}
+  </body>
+</html>
