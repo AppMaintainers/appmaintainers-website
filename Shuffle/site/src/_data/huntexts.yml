@@ -2,5 +2,40 @@ company: App Maintainers
 language: magyar
 description: Egyedi szoftvereket fejlesztünk és tartunk karban. Az általunk készített megoldások bármilyen eszközön használhatóak. Reszponzív webalkalmazásainkat akár mobil alkalmazásként is  elérhetővé teheti.
 keywords:  web, fejlesztő, web design, webfejlesztő, website builder, web design, website design, web de, web development
-tagline: This site is totally awesome
-email: your-email@example.com
+navbar_1: Fejlesztés
+navbar_2: Karbantartás
+navbar_3: Frissítések
+navbar_4: Rólunk
+book_video: Foglaljon videóhívás időpontot!
+send_email: Send an email!
+write_to_us: Írjon nekünk!
+email: info@appmaintainers.com
+develop_text: Egyedi alkalmazásokat fejlesztünk és tartunk karban hosszútávú partnereink számára.
+we_do: Egyedi
+tailor_made: szoftvereket
+dev_and_maintenance: fejlesztünk és tartunk karban
+our_work: Az általunk készített megoldások bármilyen eszközön használhatóak. Reszponzív webalkalmazásainkat akár mobil alkalmazásként is  elérhetővé teheti.
+savvycal_ending: kapcsolat
+rights: © 2021. Minden jog fentartva.
+office: Iroda
+contact: Kapcsolat
+address: 1115, BUDAPEST, Ildikó utca 24, Magyarország
+solution: Közös gondolkodás
+finished_projects: Megvalósult projekt
+hours: Munkaóra
+business: Üzleti lehetőség
+expect: Amire mindig számíthat
+idea_extend: Hozzáteszünk az ötletéhez
+years_together: 9 év
+provide_knowledge: Kiemelkedő tudást adunk
+team_introduction: Csapatunkat tapasztalt és segítőkész fejlesztők alkotják, akik megtesznek mindent, hogy a fejlesztés követhető és eredményes legyen.
+longterm: Hosszú távban gondolkodunk
+project_introduction: Igaz ugyan, hogy több mint 50+ befejezett projekt áll mögöttünk, ám mégis azokra a üzleti kapcsolatainkra vagyunk a legbüszkébbek, akikkel több mint 8 éve folyamatosan együtt dolgozhatunk.
+value: Értékeljük a tapasztalatát
+working_introduction: Nem csak a szavak szintjén érhető tetten, hogy az ügyfeleinket partnerként kezeljük. Építünk a tapasztalatára és szívesen dolgozunk a megszokott eszközeivel ha azok beváltak.
+ship_quickly: Gyorsan érünk el eredményeket
+fast_deliver: Nehéz elhinni, de akár hetek alatt is komoly funkcionalitású szoftvert tudunk szállítani. Készen, befejezve, éles környezetben futtatva.
+love_maintenance: Szeretjük a karbantartást
+maintenance_description: Másokkal ellentétben, mi kifejezetten karbantartásra szakosodtunk a kezdetekben. Habár ma már főként új fejlesztéseken dolgozunk, nem ritkák a karbantartás típusú felkérések. Ezeknek különösen örülünk!
+provide_flexibility: Flexibilitást kap tőlünk
+flexibility_description: Nem kérjük arra, hogy hosszútávra köteleződjön el. Tapasztalja meg annak az előnyét, hogy rugalmasan alkalmazkodunk az erőforrás igényeihez!

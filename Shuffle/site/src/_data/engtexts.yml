@@ -8,5 +8,40 @@ company: App Maintainers
 language: english
 description: We do tailor made software development and maintenance. Our solutions can be used on any device. You can even make our responsive web applications available as mobile apps.
 keywords: web, developer, web design, web developer, website builder, web design, website design, web de, web development
-tagline: This site is totally awesome
-email: your-email@example.com
+navbar_1: Development
+navbar_2: Maintenance
+navbar_3: Updates
+navbar_4: About us
+book_video: Book a video call!
+send_email: Send an email!
+write_to_us: Write to us!
+email: info@appmaintainers.com
+develop_text: We develop and maintain custom applications for our long-term partners.
+we_do: We do
+tailor_made: tailor made software
+dev_and_maintenance: development and maintenance
+our_work: Our solutions can be used on any device. You can even make our responsive web applications available as mobile apps.
+savvycal_ending: first-video-call
+rights: © 2021. All rights reserved.
+office: Office
+contact: Contact
+address: 1115, BUDAPEST, Ildikó utca 24, HUNGARY
+solution: Solution building
+finished_projects: Finished projects
+hours: Hours spent well
+business: Business opportunities
+expect: What you can always expect
+idea_extend: We extend your idea
+years_together: 9 years
+provide_knowledge: We provide outstanding knowledge
+team_introduction: Our team is made up of experienced and helpful developers who do their utmost to ensure that the development process is traceable and effective.
+longterm: We think long term
+project_introduction: It is true that we have more than 50+ completed projects behind us, but we are most proud of the business relationships we have had for more than 8 years.
+value: We value your experience
+working_introduction: It is not just words that show that we treat our customers as partners. We build on your experience and are happy to work with the tools you are used to if they work.
+ship_quickly: We ship quickly
+fast_deliver: It's hard to believe, but we can deliver software with serious functionality in weeks. Ready, finished, running in a live environment.
+love_maintenance: We love maintenance
+maintenance_description: Unlike others, we specialised specifically in maintenance at the beginning. Although we now mainly work on new developments, maintenance-type requests are not rare. We are particularly happy about these!
+provide_flexibility: We provide flexibility
+flexibility_description: We are not asking you to make a long-term commitment. Experience the benefit of our flexibility to adapt to your resource needs!
