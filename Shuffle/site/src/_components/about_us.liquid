@@ -1,0 +1,55 @@
+<section class="py-20">
+    <div class="container px-4 mx-auto">
+        <div class="max-w-lg mx-auto mb-12 text-center"><span class="inline-block py-1 px-3 text-xs font-semibold bg-blue-100 text-blue-600 rounded-xl">{{ metadata.management }}</span>
+            <h2 class="text-3xl md:text-4xl mt-2 mb-4 font-bold font-heading">{{ about_us.understandIT }}</h2>
+            <p class="text-blueGray-400 leading-loose">{{ about_us.management_description }}</p>
+        </div>
+        <div class="flex flex-wrap -mx-3 -mb-12">
+            {% if language == "english" %}
+            <div class="lg:w-1/2 flex flex-col md:flex-row px-3 mb-12"><img class="h-64 w-64 rounded object-cover" src="images/Bence.jpg" alt="">
+                {% elsif language == "magyar" %}
+                <div class="lg:w-1/2 flex flex-col md:flex-row px-3 mb-12"><img class="h-64 w-64 rounded object-cover" src="../images/Bence.jpg" alt="">
+                    {% endif %}
+                    <div class="pt-6 md:pt-2 md:pl-6">
+                        <p class="text-xl">{{ about_us.bence_name }}</p>
+                        <p class="my-2 text-blue-600">{{ about_us.lead }}</p>
+                        <p class="leading-loose text-blueGray-400 text-left	">{{ about_us.bence_introduction }}</p>
+                    </div>
+                </div>
+                {% if language == "english" %}
+                <div class="lg:w-1/2 flex flex-col md:flex-row px-3 mb-12"><img class="h-64 w-64 rounded object-cover" src="images/attila.jpg" alt="">
+                    {% elsif language == "magyar" %}
+                    <div class="lg:w-1/2 flex flex-col md:flex-row px-3 mb-12"><img class="h-64 w-64 rounded object-cover" src="../images/attila.jpg" alt="">
+                        {% endif %}
+                        <div class="pt-6 md:pt-2 md:pl-6">
+                            <p class="text-xl">{{ about_us.attila_name }}</p>
+                            <p class="my-2 text-blue-600">{{ about_us.technical_lead }}</p>
+                            <p class="leading-loose text-blueGray-400 text-left">{{ about_us.attila_introduction }}</p>
+                        </div>
+                    </div>
+                    <div class="lg:w-1/2 flex flex-col md:flex-row px-3 mb-12 hidden"><img class="h-64 w-64 rounded object-cover" src="https://images.unsplash.com/photo-1584308972272-9e4e7685e80f?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60" alt="">
+                        <div class="pt-6 md:pt-2 md:pl-6">
+                            <p class="text-xl">Anne Jones</p>
+                            <p class="my-2 text-sm text-blue-600">Head of Operations</p>
+                            <p class="leading-loose text-blueGray-400">Donec consequat tortor risus, at auctor felis consequat a. Donec quis dolor sem. Sed sollicitudin magna in hendrerit pulvinar. Vestibulum non quam velit.</p>
+                        </div>
+                    </div>
+                    <div class="lg:w-1/2 flex flex-col md:flex-row px-3 mb-12 hidden"><img class="h-64 w-64 rounded object-cover" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60" alt="">
+                        <div class="pt-6 md:pt-2 md:pl-6">
+                            <p class="text-xl">Julie Bailey</p>
+                            <p class="my-2 text-sm text-blue-600">Head of Development</p>
+                            <p class="leading-loose text-blueGray-400">Donec consequat tortor risus, at auctor felis consequat a. Donec quis dolor sem. Sed sollicitudin magna in hendrerit pulvinar. Vestibulum non quam velit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</section>
+<section class="pt-20 pb-24 bg-blue-600">
+    <div class="container px-4 mx-auto">
+        <div class="max-w-xl mx-auto text-center"><span class="inline-block text-xs py-1 px-3 bg-blue-500 text-white font-semibold rounded-xl">{{ about_us.lets_start }}</span>
+            <h2 class="my-3 text-3xl md:text-4xl text-white font-bold font-heading">{{ about_us.talk_about_projects }}</h2>
+            <p class="text-sm md:text-base text-white">{{ about_us.partnership_introduction }}</p>
+            <div class="mt-10"><a class="inline-block py-4 px-8 text-xs text-blue-600 hover:text-white font-semibold leading-none bg-white hover:bg-blue-600 border hover:border-white rounded transition duration-300" data-savvycal-embed href="https://savvycal.com/app-maintainers/{{ metadata.savvycal_ending }}">{{ metadata.book_video }}</a></div>
+        </div>
+    </div>
+</section>

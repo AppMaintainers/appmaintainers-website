@@ -2,9 +2,9 @@
     <section class="py-20">
         <div class="container px-4 mx-auto">
             <div class="flex flex-wrap mb-12 lg:mb-20 -mx-3 text-center lg:text-left">
-                {% if metadata.language == "english" %}
+                {% if language == "english" %}
                     <div class="w-full lg:w-1/5 px-3 mb-6 lg:mb-0"><a class="inline-block mx-auto lg:mx-0 text-3xl font-semibold leading-none" href="#"><img src="images/logo.svg" alt="{{ metadata.company }}" width="100"></a></div>
-                {% elsif metadata.language == "magyar" %}
+                {% elsif language == "magyar" %}
                     <div class="w-full lg:w-1/5 px-3 mb-6 lg:mb-0"><a class="inline-block mx-auto lg:mx-0 text-3xl font-semibold leading-none" href="#"><img src="../images/logo.svg" alt="{{ metadata.company }}" width="100"></a></div>
                 {% endif %}
                 <div class="w-full lg:w-2/5 px-3 mb-8 lg:mb-0">

@@ -1,170 +1,8 @@
-<section class="py-20">
-    <div class="container px-4 mx-auto">
-        <div class="max-w-lg mx-auto mb-12 text-center"><span class="inline-block py-1 px-3 text-xs font-semibold bg-blue-100 text-blue-600 rounded-xl">{{ metadata.management }}</span>
-            <h2 class="text-3xl md:text-4xl mt-2 mb-4 font-bold font-heading">{{ metadata.understandIT }}</h2>
-            <p class="text-blueGray-400 leading-loose">{{ metadata.management_description }}</p>
-        </div>
-        <div class="flex flex-wrap -mx-3 -mb-12">
-        {% if metadata.language == "english" %}
-            <div class="lg:w-1/2 flex flex-col md:flex-row px-3 mb-12"><img class="h-64 w-64 rounded object-cover" src="images/Bence.jpg" alt="">
-        {% elsif metadata.language == "magyar" %}
-            <div class="lg:w-1/2 flex flex-col md:flex-row px-3 mb-12"><img class="h-64 w-64 rounded object-cover" src="../images/Bence.jpg" alt="">
-        {% endif %}
-                <div class="pt-6 md:pt-2 md:pl-6">
-                    <p class="text-xl">{{ metadata.bence_name }}</p>
-                    <p class="my-2 text-blue-600">{{ metadata.lead }}</p>
-                    <p class="leading-loose text-blueGray-400 text-left	">{{ metadata.bence_introduction }}</p>
-                </div>
-            </div>
-            {% if metadata.language == "english" %}
-                <div class="lg:w-1/2 flex flex-col md:flex-row px-3 mb-12"><img class="h-64 w-64 rounded object-cover" src="images/attila.jpg" alt="">
-            {% elsif metadata.language == "magyar" %}
-                <div class="lg:w-1/2 flex flex-col md:flex-row px-3 mb-12"><img class="h-64 w-64 rounded object-cover" src="../images/attila.jpg" alt="">
-            {% endif %}
-            <div class="pt-6 md:pt-2 md:pl-6">
-                    <p class="text-xl">{{ metadata.attila_name }}</p>
-                    <p class="my-2 text-blue-600">{{ metadata.technical_lead }}</p>
-                    <p class="leading-loose text-blueGray-400 text-left">{{ metadata.attila_introduction }}</p>
-                </div>
-            </div>
-            <div class="lg:w-1/2 flex flex-col md:flex-row px-3 mb-12 hidden"><img class="h-64 w-64 rounded object-cover" src="https://images.unsplash.com/photo-1584308972272-9e4e7685e80f?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60" alt="">
-                <div class="pt-6 md:pt-2 md:pl-6">
-                    <p class="text-xl">Anne Jones</p>
-                    <p class="my-2 text-sm text-blue-600">Head of Operations</p>
-                    <p class="leading-loose text-blueGray-400">Donec consequat tortor risus, at auctor felis consequat a. Donec quis dolor sem. Sed sollicitudin magna in hendrerit pulvinar. Vestibulum non quam velit.</p>
-                </div>
-            </div>
-            <div class="lg:w-1/2 flex flex-col md:flex-row px-3 mb-12 hidden"><img class="h-64 w-64 rounded object-cover" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60" alt="">
-                <div class="pt-6 md:pt-2 md:pl-6">
-                    <p class="text-xl">Julie Bailey</p>
-                    <p class="my-2 text-sm text-blue-600">Head of Development</p>
-                    <p class="leading-loose text-blueGray-400">Donec consequat tortor risus, at auctor felis consequat a. Donec quis dolor sem. Sed sollicitudin magna in hendrerit pulvinar. Vestibulum non quam velit.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<section class="pt-20 pb-24 bg-blue-600">
-    <div class="container px-4 mx-auto">
-        <div class="max-w-xl mx-auto text-center"><span class="inline-block text-xs py-1 px-3 bg-blue-500 text-white font-semibold rounded-xl">{{ metadata.lets_start }}</span>
-            <h2 class="my-3 text-3xl md:text-4xl text-white font-bold font-heading">{{ metadata.talk_about_projects }}</h2>
-            <p class="text-sm md:text-base text-white">{{ metadata.partnership_introduction }}</p>
-            <div class="mt-10"><a class="inline-block py-4 px-8 text-xs text-blue-600 hover:text-white font-semibold leading-none bg-white hover:bg-blue-600 border hover:border-white rounded transition duration-300" data-savvycal-embed href="https://savvycal.com/app-maintainers/{{ metadata.savvycal_ending }}">{{ metadata.book_video }}</a></div>
-        </div>
-    </div>
-</section>
-<div class="container mx-auto">
-    <h2 class="text-4xl mb-2 leading-tight font-bold font-heading text-center md:pt-32 pt-12">{{ metadata.clients }}</h2>
-</div>
-<section class="py-12 md:py-32 overflow-x-hidden">
-    <div class="container px-4 mx-auto">
-        <div class="flex flex-wrap lg:flex-nowrap">
-            {% if metadata.language == "english" %}
-                <div class="relative w-full lg:w-1/2 order-1 lg:order-0 my-12 lg:my-0"><img class="relative mx-auto rounded-xl w-full z-10" src="images/Kinteract.png" alt=""><img class="absolute top-0 left-0 w-40 -ml-12 -mt-12" src="metis-assets/elements/blob-tear.svg" alt=""><img class="absolute bottom-0 right-0 w-40 -mr-12 -mb-12" src="metis-assets/elements/blob-tear.svg" alt=""></div>
-            {% elsif metadata.language == "magyar" %}
-                <div class="relative w-full lg:w-1/2 order-1 lg:order-0 my-12 lg:my-0"><img class="relative mx-auto rounded-xl w-full z-10" src="../images/Kinteract.png" alt=""><img class="absolute top-0 left-0 w-40 -ml-12 -mt-12" src="../metis-assets/elements/blob-tear.svg" alt=""><img class="absolute bottom-0 right-0 w-40 -mr-12 -mb-12" src="../metis-assets/elements/blob-tear.svg" alt=""></div>
-            {% endif %}
-            <div class="w-full lg:w-1/2 lg:order-1">
-                <div class="py-6 lg:pl-32">
-                    <div class="mb-4"><span class="text-xs py-1 px-3 text-blue-600 font-semibold bg-blue-50 rounded-xl">{{ metadata.startup }}</span>
-                        <h2 class="text-4xl mt-3 font-bold font-heading">{{ metadata.kinteract }}</h2>
-                    </div>
-                    <div class="flex items-start py-4">
-                        <div class="w-8 mr-5 text-blue-500">
-                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                            </svg>
-                        </div>
-                        <div>
-                            <h3 class="mb-2 text-xl font-semibold font-heading">{{ metadata.tailor_made_software }}</h3>
-                            <p class="text-blueGray-400 leading-loose">{{ metadata.tailor_made_description }}</p>
-                        </div>
-                    </div>
-                    <div class="flex items-start py-4">
-                        <div class="w-8 mr-5 text-blue-500">
-                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"></path>
-                            </svg>
-                        </div>
-                        <div>
-                            <h3 class="mb-2 text-xl font-semibold font-heading">{{ metadata.longterm_cooperation }}</h3>
-                            <p class="text-blueGray-400 leading-loose">{{ metadata.longterm_description }}</p>
-                        </div>
-                    </div>
-                    <div class="flex items-start py-4">
-                        <div class="w-8 mr-5 text-blue-500">
-                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z"></path>
-                            </svg>
-                        </div>
-                        <div>
-                            <h3 class="mb-2 text-xl font-semibold font-heading">{{ metadata.changing_technical }}</h3>
-                            <p class="text-blueGray-400 leading-loose">{{ metadata.technical_description }}</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<section class="py-12 md:py-32 overflow-x-hidden">
-    <div class="container px-4 mx-auto">
-        <div class="flex flex-wrap lg:flex-nowrap">
-            <div class="w-full lg:w-1/2">
-                <div class="py-6 lg:pr-32">
-                    <div class="mb-4"><span class="text-xs py-1 px-3 text-blue-600 font-semibold bg-blue-50 rounded-xl">{{ metadata.UNHCR_name }}</span>
-                        <h2 class="text-4xl mt-3 font-bold font-heading">{{ metadata.UNHCR }}</h2>
-                    </div>
-                    <div class="flex items-start py-4">
-                        <div class="w-8 mr-5 text-blue-500">
-                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                            </svg>
-                        </div>
-                        <div>
-                            <h3 class="mb-2 text-xl font-semibold font-heading">{{ metadata.internal_competition }}</h3>
-                            <p class="text-blueGray-400 leading-loose">{{ metadata.internal_competition_description }}</p>
-                        </div>
-                    </div>
-                    <div class="flex items-start py-4">
-                        <div class="w-8 mr-5 text-blue-500">
-                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"></path>
-                            </svg>
-                        </div>
-                        <div>
-                            <h3 class="mb-2 text-xl font-semibold font-heading">{{ metadata.extendedSLA }}</h3>
-                            <p class="text-blueGray-400 leading-loose">{{ metadata.extendedSLA_description }}</p>
-                        </div>
-                    </div>
-                    <div class="flex items-start py-4">
-                        <div class="w-8 mr-5 text-blue-500">
-                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z"></path>
-                            </svg>
-                        </div>
-                        <div>
-                            <h3 class="mb-2 text-xl font-semibold font-heading">{{ metadata.growing_team }}</h3>
-                            <p class="text-blueGray-400 leading-loose">{{ metadata.growing_team_description }}</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            {% if metadata.language == "english" %}
-                <div class="relative w-full lg:w-1/2 my-12 lg:my-0"><img class="relative mx-auto rounded-xl w-full z-10 border-2 border-gray-600" src="images/UNHCR.png" alt=""><img class="absolute top-0 left-0 w-40 -ml-12 -mt-12" src="metis-assets/elements/blob-tear.svg" alt=""><img class="absolute bottom-0 right-0 w-40 -mr-12 -mb-12" src="metis-assets/elements/blob-tear.svg" alt=""></div>
-            {% elsif metadata.language == "magyar" %}
-                <div class="relative w-full lg:w-1/2 my-12 lg:my-0"><img class="relative mx-auto rounded-xl w-full z-10 border-2 border-gray-600" src="../images/UNHCR.png" alt=""><img class="absolute top-0 left-0 w-40 -ml-12 -mt-12" src="../metis-assets/elements/blob-tear.svg" alt=""><img class="absolute bottom-0 right-0 w-40 -mr-12 -mb-12" src="../metis-assets/elements/blob-tear.svg" alt=""></div>
-            {% endif %}
-        </div>
-    </div>
-</section>
 <section class="pt-16 pb-20 bg-blueGray-50">
     <div class="container px-4 mx-auto">
         <div class="flex flex-wrap items-center mb-12" id="Update">
             <div class="w-full lg:w-1/2 mb-6 lg:mb-0">
-                <h2 class="text-4xl font-bold font-heading"><span>{{ metadata.digital_skills }}</span>                <span class="text-blue-600">{{ metadata.business_potential }}</span>                <span>{{ metadata.you_can_build }}</span></h2>
+                <h2 class="text-4xl font-bold font-heading"><span>{{ updates.digital_skills }}</span>                <span class="text-blue-600">{{ updates.business_potential }}</span>                <span>{{ updates.you_can_build }}</span></h2>
             </div>
             <div class="w-full lg:w-1/2">
                 <p class="lg:pl-16 text-blueGray-400 leading-loose"> </p>
@@ -176,8 +14,8 @@
                     <svg class="w-10 h-10 mx-auto mb-4 text-blue-600" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path>
                     </svg>
-                    <h3 class="mb-2 font-bold font-heading">{{ metadata.online_service }}</h3>
-                    <p class="text-sm text-blueGray-400">{{ metadata.integrate }}</p>
+                    <h3 class="mb-2 font-bold font-heading">{{ updates.online_service }}</h3>
+                    <p class="text-sm text-blueGray-400">{{ updates.integrate }}</p>
                 </div>
             </div>
             <div class="w-full md:w-1/2 lg:w-1/4 px-3 mb-6">
@@ -185,8 +23,8 @@
                     <svg class="w-10 h-10 mx-auto mb-4 text-blue-600" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V8a2 2 0 00-2-2h-5m-4 0V5a2 2 0 114 0v1m-4 0a2 2 0 104 0m-5 8a2 2 0 100-4 2 2 0 000 4zm0 0c1.306 0 2.417.835 2.83 2M9 14a3.001 3.001 0 00-2.83 2M15 11h3m-3 4h2"></path>
                     </svg>
-                    <h3 class="mb-2 font-bold font-heading">{{ metadata.internal_administration }}</h3>
-                    <p class="text-sm text-blueGray-400">{{ metadata.administration_description }}</p>
+                    <h3 class="mb-2 font-bold font-heading">{{ updates.internal_administration }}</h3>
+                    <p class="text-sm text-blueGray-400">{{ updates.administration_description }}</p>
                 </div>
             </div>
             <div class="w-full md:w-1/2 lg:w-1/4 px-3 mb-6">
@@ -194,8 +32,8 @@
                     <svg class="w-10 h-10 mx-auto mb-4 text-blue-600" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
                     </svg>
-                    <h3 class="mb-2 font-bold font-heading">{{ metadata.API }}</h3>
-                    <p class="text-sm text-blueGray-400">{{ metadata.API_description }}</p>
+                    <h3 class="mb-2 font-bold font-heading">{{ updates.API }}</h3>
+                    <p class="text-sm text-blueGray-400">{{ updates.API_description }}</p>
                 </div>
             </div>
             <div class="w-full md:w-1/2 lg:w-1/4 px-3 mb-6">
@@ -203,8 +41,8 @@
                     <svg class="w-10 h-10 mx-auto mb-4 text-blue-600" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
                     </svg>
-                    <h3 class="mb-2 font-bold font-heading">{{ metadata.central_system }}</h3>
-                    <p class="text-sm text-blueGray-400">{{ metadata.central_description }}</p>
+                    <h3 class="mb-2 font-bold font-heading">{{ updates.central_system }}</h3>
+                    <p class="text-sm text-blueGray-400">{{ updates.central_description }}</p>
                 </div>
             </div>
         </div>
@@ -221,8 +59,8 @@
                         </svg>
                     </div>
                     <div class="mt-4">
-                        <h3 class="mb-3 text-xl font-semibold font-heading">{{ metadata.user_management }}</h3>
-                        <p class="text-blueGray-400 leading-loose">{{ metadata.user_description }}</p>
+                        <h3 class="mb-3 text-xl font-semibold font-heading">{{ updates.user_management }}</h3>
+                        <p class="text-blueGray-400 leading-loose">{{ updates.user_description }}</p>
                     </div>
                 </div>
             </div>
@@ -234,8 +72,8 @@
                         </svg>
                     </div>
                     <div class="mt-4">
-                        <h3 class="mb-3 text-xl font-semibold font-heading">{{ metadata.monitoring }}</h3>
-                        <p class="text-blueGray-400 leading-loose">{{ metadata.monitoring_description }}</p>
+                        <h3 class="mb-3 text-xl font-semibold font-heading">{{ updates.monitoring }}</h3>
+                        <p class="text-blueGray-400 leading-loose">{{ updates.monitoring_description }}</p>
                     </div>
                 </div>
             </div>
@@ -247,8 +85,8 @@
                         </svg>
                     </div>
                     <div class="mt-4">
-                        <h3 class="mb-3 text-xl font-semibold font-heading">{{ metadata.email_delivery }}</h3>
-                        <p class="text-blueGray-400 leading-loose">{{ metadata.email_delivery_description }}</p>
+                        <h3 class="mb-3 text-xl font-semibold font-heading">{{ updates.email_delivery }}</h3>
+                        <p class="text-blueGray-400 leading-loose">{{ updates.email_delivery_description }}</p>
                     </div>
                 </div>
             </div>
@@ -260,8 +98,8 @@
                         </svg>
                     </div>
                     <div class="mt-4">
-                        <h3 class="mb-3 text-xl font-semibold font-heading">{{ metadata.video_processing }}</h3>
-                        <p class="text-blueGray-400 leading-loose">{{ metadata.video_processing_description }}</p>
+                        <h3 class="mb-3 text-xl font-semibold font-heading">{{ updates.video_processing }}</h3>
+                        <p class="text-blueGray-400 leading-loose">{{ updates.video_processing_description }}</p>
                     </div>
                 </div>
             </div>
@@ -273,8 +111,8 @@
                         </svg>
                     </div>
                     <div class="mt-4">
-                        <h3 class="mb-3 text-xl font-semibold font-heading">{{ metadata.data_processing }}</h3>
-                        <p class="text-blueGray-400 leading-loose">{{ metadata.data_processing_description }}</p>
+                        <h3 class="mb-3 text-xl font-semibold font-heading">{{ updates.data_processing }}</h3>
+                        <p class="text-blueGray-400 leading-loose">{{ updates.data_processing_description }}</p>
                     </div>
                 </div>
             </div>
@@ -286,8 +124,8 @@
                         </svg>
                     </div>
                     <div class="mt-4">
-                        <h3 class="mb-3 text-xl font-semibold font-heading">{{ metadata.error_handling }}</h3>
-                        <p class="text-blueGray-400 leading-loose">{{ metadata.error_description }}</p>
+                        <h3 class="mb-3 text-xl font-semibold font-heading">{{ updates.error_handling }}</h3>
+                        <p class="text-blueGray-400 leading-loose">{{ updates.error_description }}</p>
                     </div>
                 </div>
             </div>
@@ -299,8 +137,8 @@
                         </svg>
                     </div>
                     <div class="mt-4">
-                        <h3 class="mb-3 text-xl font-semibold font-heading">{{ metadata.searching }}</h3>
-                        <p class="text-blueGray-400 leading-loose">{{ metadata.searching_description }}</p>
+                        <h3 class="mb-3 text-xl font-semibold font-heading">{{ updates.searching }}</h3>
+                        <p class="text-blueGray-400 leading-loose">{{ updates.searching_description }}</p>
                     </div>
                 </div>
             </div>
@@ -312,8 +150,8 @@
                         </svg>
                     </div>
                     <div class="mt-4">
-                        <h3 class="mb-3 text-xl font-semibold font-heading">{{ metadata.API_integration }}</h3>
-                        <p class="text-blueGray-400 leading-loose">{{ metadata.API_integration_description }}</p>
+                        <h3 class="mb-3 text-xl font-semibold font-heading">{{ updates.API_integration }}</h3>
+                        <p class="text-blueGray-400 leading-loose">{{ updates.API_integration_description }}</p>
                     </div>
                 </div>
             </div>
@@ -325,8 +163,8 @@
                         </svg>
                     </div>
                     <div class="mt-4">
-                        <h3 class="mb-3 text-xl font-semibold font-heading">{{ metadata.security }}</h3>
-                        <p class="text-blueGray-400 leading-loose">{{ metadata.security_description }}</p>
+                        <h3 class="mb-3 text-xl font-semibold font-heading">{{ updates.security }}</h3>
+                        <p class="text-blueGray-400 leading-loose">{{ updates.security_description }}</p>
                     </div>
                 </div>
             </div>
@@ -336,7 +174,7 @@
 <section class="pt-20 pb-24 bg-blueGray-100">
     <div class="container px-4 mx-auto" id="About">
         <div class="max-w-xl mx-auto text-center"><span class="inline-block py-1 px-3 text-xs md:text-sm rounded-xl bg-blue-50 text-blue-600 font-semibold">{{ metadata.lets_start }}</span>
-            <h2 class="my-2 text-3xl md:text-4xl font-bold font-heading">{{ metadata.attention_contact }}</h2>
+            <h2 class="my-2 text-3xl md:text-4xl font-bold font-heading">{{ updates.attention_contact }}</h2>
             <div class="mt-6"><a class="block sm:inline-block py-4 px-8 mb-4 sm:mb-0 sm:mr-3 text-xs text-white text-center font-semibold leading-none bg-blue-600 hover:bg-blue-700 rounded" data-savvycal-embed href="https://savvycal.com/app-maintainers/{{ metadata.savvycal_ending }}">{{ metadata.book_video }}</a><a class="block sm:inline-block py-4 px-8 text-xs text-blueGray-500 hover:text-blueGray-600 text-center font-semibold leading-none bg-white border border-blueGray-200 hover:border-blueGray-300 rounded" href="mailto:{{ metadata.email }}">{{ metadata.write_to_us }}</a></div>
         </div>
     </div>
