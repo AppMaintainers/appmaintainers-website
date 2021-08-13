@@ -1,5 +1,36 @@
 ---
-layout: engHome
+layout: homePage
+language: english
+development:
+    solution: Solution building
+    finished_projects: Finished projects
+    hours: Hours spent well
+    business: Business opportunities
+
+footer:
+    rights: © 2021. All rights reserved.
+    office: Office
+    contact: Contact
+    address: 1115, BUDAPEST, Ildikó utca 24, HUNGARY
+
+maintenance:
+    expect: What you can always expect
+    idea_extend: We extend your idea
+    years_together: 9 years
+    provide_knowledge: We provide outstanding knowledge
+    team_introduction: Our team is made up of experienced and helpful developers who do their utmost to ensure that the development process is traceable and effective.
+    longterm: We think long term
+    project_introduction: It is true that we have more than 50+ completed projects behind us, but we are most proud of the business relationships we have had for more than 8 years.
+    value: We value your experience
+    working_introduction: It is not just words that show that we treat our customers as partners. We build on your experience and are happy to work with the tools you are used to if they work.
+    ship_quickly: We ship quickly
+    fast_deliver: It's hard to believe, but we can deliver software with serious functionality in weeks. Ready, finished, running in a live environment.
+    love_maintenance: We love maintenance
+    maintenance_description: Unlike others, we specialised specifically in maintenance at the beginning. Although we now mainly work on new developments, maintenance-type requests are not rare. We are particularly happy about these!
+    provide_flexibility: We provide flexibility
+    flexibility_description: We are not asking you to make a long-term commitment. Experience the benefit of our flexibility to adapt to your resource needs!
+
 ---
-
-
+{% render "development", metadata: site.data.engtexts, language, development: page.development %}
+{% render "maintenance", metadata: site.data.engtexts, language, maintenance: page.maintenance %}
+{% render "updates", metadata: site.data.engtexts, language %}

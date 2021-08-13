@@ -1,6 +1,10 @@
 ---
-layout: home
+layout: homePage
 permalink: /hu/
+language: magyar
 ---
+{% render "development", metadata: site.data.huntexts, language %}
+{% render "maintenance", metadata: site.data.huntexts, language %}
+{% render "updates", metadata: site.data.huntexts, language %}
 
-Welcome to Bridgetown!
+

@@ -8,13 +8,17 @@
                     </svg>
                 </div>
                 <div class="sm:py-2 ml-2 sm:ml-6"><span class="sm:text-2xl font-bold font-heading ">{{ metadata.years_together }}</span>
-                    <p class="text-xs sm:text-base text-blueGray-400">{{ metadata.solution }}</p>
+                    <p class="text-xs sm:text-base text-blueGray-400">{{ development.solution }}</p>
                 </div>
             </div>
             <div class="flex w-1/2 lg:w-auto py-4">
-                <div class="flex justify-center items-center bg-blueGray-50 rounded-xl h-12 w-12 sm:h-20 sm:w-20"><img class="h-6 sm:h-8" src="metis-assets/icons/puzzle.svg" alt=""></div>
+                {% if metadata.language == "english" %}
+                    <div class="flex justify-center items-center bg-blueGray-50 rounded-xl h-12 w-12 sm:h-20 sm:w-20"><img class="h-6 sm:h-8" src="metis-assets/icons/puzzle.svg" alt=""></div>
+                {% elsif metadata.language == "magyar" %}
+                    <div class="flex justify-center items-center bg-blueGray-50 rounded-xl h-12 w-12 sm:h-20 sm:w-20"><img class="h-6 sm:h-8" src="../metis-assets/icons/puzzle.svg" alt=""></div>
+                {% endif %}
                 <div class="sm:py-2 ml-2 sm:ml-6"><span class="sm:text-2xl font-bold font-heading">50+</span>
-                    <p class="text-xs sm:text-base text-blueGray-400">{{ metadata.finished_projects }}</p>
+                    <p class="text-xs sm:text-base text-blueGray-400">{{ development.finished_projects }}</p>
                 </div>
             </div>
             <div class="flex w-1/2 lg:w-auto py-4">
@@ -24,7 +28,7 @@
                     </svg>
                 </div>
                 <div class="sm:py-2 ml-2 sm:ml-6"><span class="sm:text-2xl font-bold font-heading">27673</span>
-                    <p class="text-xs sm:text-base text-blueGray-400">{{ metadata.hours }}</p>
+                    <p class="text-xs sm:text-base text-blueGray-400">{{ development.hours }}</p>
                 </div>
             </div>
             <div class="flex w-1/2 lg:w-auto py-4">
@@ -34,7 +38,7 @@
                     </svg>
                 </div>
                 <div class="sm:py-2 ml-2 sm:ml-6"><span class="sm:text-2xl font-bold font-heading">∞</span>
-                    <p class="text-xs sm:text-base text-blueGray-400">{{ metadata.business }}</p>
+                    <p class="text-xs sm:text-base text-blueGray-400">{{ development.business }}</p>
                 </div>
             </div>
         </div>

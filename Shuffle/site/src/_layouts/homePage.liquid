@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  {% if page.language == "english" %}
+    {% render "head", metadata: site.data.engtexts %}
+  {% elsif page.language == "magyar" %}
+    {% render "head", metadata: site.data.huntexts %}
+  {% endif %}
+</head>
+  <body class="antialiased bg-body text-body font-body">
+    {% if page.language == "english" %}
+      {% render "navbar", metadata: site.data.engtexts %}
+    {% elsif page.language == "magyar" %}
+      {% render "navbar", metadata: site.data.huntexts %}
+    {% endif %}
+
+
+    {{ content }}
+
+    {% if page.language == "english" %}
+      {% render "footer", metadata: site.data.engtexts, footer: page.footer%}
+    {% elsif page.language == "magyar" %}
+      {% render "footer", metadata: site.data.huntexts %}
+    {% endif %}
+  </body>
+</html>

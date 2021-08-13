@@ -27,7 +27,11 @@
             </ul>
             {% if metadata.language == "english" %}
                 <div class="hidden lg:block"><a class="mr-2 inline-block px-4 py-3 text-xs text-blue-600 hover:text-blue-700 font-semibold leading-none border border-blue-200 hover:border-blue-300 rounded" href="mailto:{{ metadata.email }}">{{ metadata.write_to_us }}</a><a class="mr-2 inline-block px-4 py-3 text-xs text-white-600 hover:bg-blue-700 font-semibold leading-none bg-blue-600 border text-white rounded" data-savvycal-embed href="https://savvycal.com/app-maintainers/{{ metadata.savvycal_ending }}">{{ metadata.book_video }}</a><a class="mr-2 inline-block px-4 py-3 text-xs text-blue-600" href="../hu/" lang="hu" hreflang="hu" onclick="setHunDefault()">
-                        <div class="flag-text--inline mr-2 inline-block px-4 py-3 text-xs hover:text-blue-700 font-semibold leading-none">   <img class="icon" src="metis-assets/icons/hu-flag.svg" style="float: left; padding-right: 5px;" alt="HU flag" width="24"><span>HU</span></div></a></div>
+                        {% if metadata.language == "english" %}
+                            <div class="flag-text--inline mr-2 inline-block px-4 py-3 text-xs hover:text-blue-700 font-semibold leading-none">   <img class="icon" src="metis-assets/icons/hu-flag.svg" style="float: left; padding-right: 5px;" alt="HU flag" width="24"><span>HU</span></div></a></div>
+                        {% elsif metadata.language == "magyar" %}
+                            <div class="flag-text--inline mr-2 inline-block px-4 py-3 text-xs hover:text-blue-700 font-semibold leading-none">   <img class="icon" src="../metis-assets/icons/uk-flag.svg" style="float: left; padding-right: 5px;" alt="EN flag" width="24"><span>EN</span></div></a></div>
+                        {% endif %}
             {% elsif metadata.language == "magyar" %}
                 <div class="hidden lg:block"><a class="mr-2 inline-block px-4 py-3 text-xs text-blue-600 hover:text-blue-700 font-semibold leading-none border border-blue-200 hover:border-blue-300 rounded" href="mailto:{{ metadata.email }}">{{ metadata.write_to_us }}</a><a class="mr-2 inline-block px-4 py-3 text-xs text-white-600 hover:bg-blue-700 font-semibold leading-none bg-blue-600 border text-white rounded" data-savvycal-embed href="https://savvycal.com/app-maintainers/{{ metadata.savvycal_ending }}">{{ metadata.book_video }}</a><a class="mr-2 inline-block px-4 py-3 text-xs text-blue-600" href="../" hreflang="en" lang="en" onclick="setEnDefault()">
                         <div class="flag-text--inline mr-2 inline-block px-4 py-3 text-xs hover:text-blue-700 font-semibold leading-none"><img class="icon" src="../metis-assets/icons/uk-flag.svg" style="float: left; padding-right: 5px;" alt="UK flag" width="24"><span>EN</span></div></a></div>
@@ -129,7 +133,11 @@
                     <li><a class="text-sm text-blueGray-400 hover:text-blueGray-500 hidden" href="#About">{{ metadata.navbar_4 }}</a></li>
                 </ul>
                 <div class="mt-4 pt-6 border-t border-blueGray-100"><a class="block px-4 py-3 mb-3 text-xs text-center font-semibold leading-none bg-blue-600 hover:bg-blue-700 text-white rounded" data-savvycal-embed href="https://savvycal.com/app-maintainers/{{ metadata.savvycal_ending }}">{{ metadata.book_video }}</a><a class="block px-4 py-3 mb-2 text-xs text-center text-blue-600 hover:text-blue-700 font-semibold leading-none border border-blue-200 hover:border-blue-300 rounded" href="mailto:{{ metadata.email }}">{{ metadata.send_email }}</a><a class="block px-4 py-3 mb-2 text-xs text-center text-blue-600 hover:text-blue-700 font-semibold leading-none" href="" hreflang="en" lang="en" onclick="setHunDefault()">
-                        <div class="flag-text--inline mr-2 inline-block px-4 py-3 text-xs hover:text-blue-700 font-semibold leading-none justify-center"><img class="icon" src="metis-assets/icons/hu-flag.svg" style="float: left; padding-right: 5px;" alt="UK flag" width="24"><span>HU</span></div></a></div>
+                        {% if metadata.language == "english" %}
+                            <div class="flag-text--inline mr-2 inline-block px-4 py-3 text-xs hover:text-blue-700 font-semibold leading-none justify-center"><img class="icon" src="metis-assets/icons/hu-flag.svg" style="float: left; padding-right: 5px;" alt="HU flag" width="24"><span>HU</span></div></a></div>
+                        {% elsif metadata.language == "magyar" %}
+                            <div class="flag-text--inline mr-2 inline-block px-4 py-3 text-xs hover:text-blue-700 font-semibold leading-none justify-center"><img class="icon" src="../metis-assets/icons/uk-flag.svg" style="float: left; padding-right: 5px;" alt="UK flag" width="24"><span>EN</span></div></a></div>
+                        {% endif %}
             </div>
             <div class="mt-auto">
                 <p class="my-4 text-xs text-blueGray-400"><span>{{ metadata.send_email }}</span>                <a class="text-blue-600 hover:text-blue-600 underline" href="mailto:{{ metadata.email }}">{{ metadata.email }}</a></p>
