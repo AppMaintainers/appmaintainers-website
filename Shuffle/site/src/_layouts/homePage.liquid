@@ -1,13 +1,15 @@
 <!doctype html>
 <html lang="en">
 <head>
-    {% render "head", metadata: page.general, language: page.language %}
+    {% render "head", metadata: site.data.general_hu.general, language: page.language %}
 </head>
   <body class="antialiased bg-body text-body font-body">
-    {% render "navbar", metadata: page.general, language: page.language %}
 
-    {{ content }}
+  {% render "navbar", metadata: site.data.general_hu.general, language: page.language %}
 
-    {% render "footer", metadata: page.general, footer: page.footer, language: page.language%}
+  {{ content }}
+
+  {% render "footer", metadata: site.data.general_hu.general, footer: page.footer, language: page.language%}
+
   </body>
 </html>

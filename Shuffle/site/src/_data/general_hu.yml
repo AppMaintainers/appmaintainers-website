@@ -1,0 +1,20 @@
+general:
+  company: App Maintainers
+  title: App Maintainers | Ruby on Rails fejlesztés & karbantartás
+  language: magyar
+  description: Egyedi szoftvereket fejlesztünk és tartunk karban. Az általunk készített megoldások bármilyen eszközön használhatóak. Reszponzív webalkalmazásainkat akár mobil alkalmazásként is  elérhetővé teheti.
+  keywords:  web, fejlesztő, web design, webfejlesztő, website builder, web design, website design, web de, web development
+  navbar_1: Fejlesztés
+  navbar_2: Karbantartás
+  navbar_3: Frissítések
+  navbar_4: Rólunk
+  book_video: Foglaljon videóhívás időpontot!
+  send_email: Írjon nekünk!
+  write_to_us: Írjon nekünk!
+  email: info@appmaintainers.com
+  develop_text: Egyedi alkalmazásokat fejlesztünk és tartunk karban hosszútávú partnereink számára.
+  we_do: Egyedi
+  tailor_made: szoftvereket
+  dev_and_maintenance: fejlesztünk és tartunk karban
+  our_work: Az általunk készített megoldások bármilyen eszközön használhatóak. Reszponzív webalkalmazásainkat akár mobil alkalmazásként is  elérhetővé teheti.
+  savvycal_ending: kapcsolat

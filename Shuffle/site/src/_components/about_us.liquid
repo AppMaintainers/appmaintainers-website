@@ -1,26 +1,18 @@
 <section class="py-20">
     <div class="container px-4 mx-auto">
-        <div class="max-w-lg mx-auto mb-12 text-center"><span class="inline-block py-1 px-3 text-xs font-semibold bg-blue-100 text-blue-600 rounded-xl">{{ metadata.management }}</span>
+        <div class="max-w-lg mx-auto mb-12 text-center"><span class="inline-block py-1 px-3 text-xs font-semibold bg-blue-100 text-blue-600 rounded-xl">{{ about_us.management }}</span>
             <h2 class="text-3xl md:text-4xl mt-2 mb-4 font-bold font-heading">{{ about_us.understandIT }}</h2>
             <p class="text-blueGray-400 leading-loose">{{ about_us.management_description }}</p>
         </div>
         <div class="flex flex-wrap -mx-3 -mb-12">
-            {% if language == "english" %}
-            <div class="lg:w-1/2 flex flex-col md:flex-row px-3 mb-12"><img class="h-64 w-64 rounded object-cover" src="images/Bence.jpg" alt="">
-                {% elsif language == "magyar" %}
-                <div class="lg:w-1/2 flex flex-col md:flex-row px-3 mb-12"><img class="h-64 w-64 rounded object-cover" src="../images/Bence.jpg" alt="">
-                    {% endif %}
+                <div class="lg:w-1/2 flex flex-col md:flex-row px-3 mb-12"><img class="h-64 w-64 rounded object-cover" src="/images/Bence.jpg" alt="">
                     <div class="pt-6 md:pt-2 md:pl-6">
                         <p class="text-xl">{{ about_us.bence_name }}</p>
                         <p class="my-2 text-blue-600">{{ about_us.lead }}</p>
                         <p class="leading-loose text-blueGray-400 text-left	">{{ about_us.bence_introduction }}</p>
                     </div>
                 </div>
-                {% if language == "english" %}
-                <div class="lg:w-1/2 flex flex-col md:flex-row px-3 mb-12"><img class="h-64 w-64 rounded object-cover" src="images/attila.jpg" alt="">
-                    {% elsif language == "magyar" %}
-                    <div class="lg:w-1/2 flex flex-col md:flex-row px-3 mb-12"><img class="h-64 w-64 rounded object-cover" src="../images/attila.jpg" alt="">
-                        {% endif %}
+                <div class="lg:w-1/2 flex flex-col md:flex-row px-3 mb-12"><img class="h-64 w-64 rounded object-cover" src="/images/attila.jpg" alt="">
                         <div class="pt-6 md:pt-2 md:pl-6">
                             <p class="text-xl">{{ about_us.attila_name }}</p>
                             <p class="my-2 text-blue-600">{{ about_us.technical_lead }}</p>

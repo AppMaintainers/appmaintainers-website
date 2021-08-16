@@ -2,30 +2,14 @@
 layout: homePage
 permalink: /hu/
 language: magyar
-general:
-    company: App Maintainers
-    title: App Maintainers | Ruby on Rails fejlesztés & karbantartás
-    language: magyar
-    description: Egyedi szoftvereket fejlesztünk és tartunk karban. Az általunk készített megoldások bármilyen eszközön használhatóak. Reszponzív webalkalmazásainkat akár mobil alkalmazásként is  elérhetővé teheti.
-    keywords:  web, fejlesztő, web design, webfejlesztő, website builder, web design, website design, web de, web development
-    navbar_1: Fejlesztés
-    navbar_2: Karbantartás
-    navbar_3: Frissítések
-    navbar_4: Rólunk
-    book_video: Foglaljon videóhívás időpontot!
-    send_email: Send an email!
-    write_to_us: Írjon nekünk!
-    email: info@appmaintainers.com
-    develop_text: Egyedi alkalmazásokat fejlesztünk és tartunk karban hosszútávú partnereink számára.
-    we_do: Egyedi
-    tailor_made: szoftvereket
-    dev_and_maintenance: fejlesztünk és tartunk karban
-    our_work: Az általunk készített megoldások bármilyen eszközön használhatóak. Reszponzív webalkalmazásainkat akár mobil alkalmazásként is  elérhetővé teheti.
-    savvycal_ending: kapcsolat
 development:
+    years_together: 9 év
     solution: Közös gondolkodás
+    projects_number: 50+
     finished_projects: Megvalósult projekt
+    working_hours: 27673
     hours: Munkaóra
+    business_opportunity: ∞
     business: Üzleti lehetőség
 footer:
     rights: © 2021. Minden jog fentartva.
@@ -35,7 +19,6 @@ footer:
 maintenance:
     expect: Amire mindig számíthat
     idea_extend: Hozzáteszünk az ötletéhez
-    years_together: 9 év
     provide_knowledge: Kiemelkedő tudást adunk
     team_introduction: Csapatunkat tapasztalt és segítőkész fejlesztők alkotják, akik megtesznek mindent, hogy a fejlesztés követhető és eredményes legyen.
     longterm: Hosszú távban gondolkodunk
@@ -114,10 +97,10 @@ updates:
     security_description: Szeretne nyugodtan aludni tudván, hogy a platform amit épített naprakész és friss?
     attention_contact: Felkeltette valami a figyelmét? Tegye meg az első lépést és vegye fel velünk a kapcsolatot!
 ---
-{% render "development", metadata: page.general, language: page.language, development: page.development %}
-{% render "maintenance", metadata: page.general, language: page.language, maintenance: page.maintenance %}
-{% render "about_us", metadata: page.general, language: page.language, about_us: page.about_us %}
-{% render "clients", metadata: page.general, language: page.language, clients: page.clients %}
-{% render "updates", metadata: page.general, language: page.language, updates: page.updates %}
+{% render "development", metadata: site.data.general_hu.general,  development: page.development %}
+{% render "maintenance", metadata: site.data.general_hu.general, language: page.language, maintenance: page.maintenance %}
+{% render "about_us", metadata: site.data.general_hu.general, language: page.language, about_us: page.about_us %}
+{% render "clients", metadata: site.data.general_hu.general, language: page.language, clients: page.clients %}
+{% render "updates", metadata: site.data.general_hu.general, language: page.language, updates: page.updates %}
 
 
