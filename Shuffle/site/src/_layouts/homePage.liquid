@@ -1,15 +1,4 @@
 <!doctype html>
-<html lang="en">
-<head>
-    {% render "head", metadata: site.data.general_hu.general, language: page.language %}
-</head>
-  <body class="antialiased bg-body text-body font-body">
-
-  {% render "navbar", metadata: site.data.general_hu.general, language: page.language %}
-
-  {{ content }}
-
-  {% render "footer", metadata: site.data.general_hu.general, footer: page.footer, language: page.language%}
-
-  </body>
+<html lang="{{ page.data.lang }}">
+    {{ content }}
 </html>

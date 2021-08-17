@@ -2,172 +2,45 @@
     <div class="container px-4 mx-auto">
         <div class="flex flex-wrap items-center mb-12" id="Update">
             <div class="w-full lg:w-1/2 mb-6 lg:mb-0">
-                <h2 class="text-4xl font-bold font-heading"><span>{{ updates.digital_skills }}</span>                <span class="text-blue-600">{{ updates.business_potential }}</span>                <span>{{ updates.you_can_build }}</span></h2>
+                <h2 class="text-4xl font-bold font-heading"><span>{{ updates.title_begin }}</span>                <span class="text-blue-600">{{ updates.title_highlighted }}</span>                <span>{{ updates.title_end }}</span></h2>
             </div>
             <div class="w-full lg:w-1/2">
                 <p class="lg:pl-16 text-blueGray-400 leading-loose"> </p>
             </div>
         </div>
         <div class="flex flex-wrap -mx-3 -mb-6">
-            <div class="w-full md:w-1/2 lg:w-1/4 px-3 mb-6">
-                <div class="pt-8 px-6 pb-6 bg-white text-center rounded shadow">
-                    <svg class="w-10 h-10 mx-auto mb-4 text-blue-600" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path>
-                    </svg>
-                    <h3 class="mb-2 font-bold font-heading">{{ updates.online_service }}</h3>
-                    <p class="text-sm text-blueGray-400">{{ updates.integrate }}</p>
+            {% for item in updates.items %}
+                <div class="w-full md:w-1/2 lg:w-1/4 px-3 mb-6">
+                    <div class="pt-8 px-6 pb-6 bg-white text-center rounded shadow">
+                        <svg class="w-10 h-10 mx-auto mb-4 text-blue-600" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path>
+                        </svg>
+                        <h3 class="mb-2 font-bold font-heading">{{ item.name }}</h3>
+                        <p class="text-sm text-blueGray-400">{{ item.description }}</p>
+                    </div>
                 </div>
-            </div>
-            <div class="w-full md:w-1/2 lg:w-1/4 px-3 mb-6">
-                <div class="pt-8 px-6 pb-6 bg-white text-center rounded shadow">
-                    <svg class="w-10 h-10 mx-auto mb-4 text-blue-600" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V8a2 2 0 00-2-2h-5m-4 0V5a2 2 0 114 0v1m-4 0a2 2 0 104 0m-5 8a2 2 0 100-4 2 2 0 000 4zm0 0c1.306 0 2.417.835 2.83 2M9 14a3.001 3.001 0 00-2.83 2M15 11h3m-3 4h2"></path>
-                    </svg>
-                    <h3 class="mb-2 font-bold font-heading">{{ updates.internal_administration }}</h3>
-                    <p class="text-sm text-blueGray-400">{{ updates.administration_description }}</p>
-                </div>
-            </div>
-            <div class="w-full md:w-1/2 lg:w-1/4 px-3 mb-6">
-                <div class="pt-8 px-6 pb-6 bg-white text-center rounded shadow">
-                    <svg class="w-10 h-10 mx-auto mb-4 text-blue-600" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-                    </svg>
-                    <h3 class="mb-2 font-bold font-heading">{{ updates.API }}</h3>
-                    <p class="text-sm text-blueGray-400">{{ updates.API_description }}</p>
-                </div>
-            </div>
-            <div class="w-full md:w-1/2 lg:w-1/4 px-3 mb-6">
-                <div class="pt-8 px-6 pb-6 bg-white text-center rounded shadow">
-                    <svg class="w-10 h-10 mx-auto mb-4 text-blue-600" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
-                    </svg>
-                    <h3 class="mb-2 font-bold font-heading">{{ updates.central_system }}</h3>
-                    <p class="text-sm text-blueGray-400">{{ updates.central_description }}</p>
-                </div>
-            </div>
+            {% endfor %}
         </div>
     </div>
 </section>
 <section class="pt-20 pb-12 md:pb-8">
     <div class="container px-4 mx-auto">
         <div class="flex flex-wrap -mx-3">
-            <div class="w-full md:w-1/2 lg:w-1/3 px-3 mb-8 md:mb-12">
-                <div class="flex items-start">
-                    <div class="mr-6 p-3 bg-blue-600 rounded-full text-white">
-                        <svg class="w-10 h-10" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
-                        </svg>
-                    </div>
-                    <div class="mt-4">
-                        <h3 class="mb-3 text-xl font-semibold font-heading">{{ updates.user_management }}</h3>
-                        <p class="text-blueGray-400 leading-loose">{{ updates.user_description }}</p>
-                    </div>
-                </div>
-            </div>
-            <div class="w-full md:w-1/2 lg:w-1/3 px-3 mb-8 md:mb-12">
-                <div class="flex items-start">
-                    <div class="mr-6 p-3 bg-blue-600 rounded-full text-white">
-                        <svg class="w-10 h-10" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"></path>
-                        </svg>
-                    </div>
-                    <div class="mt-4">
-                        <h3 class="mb-3 text-xl font-semibold font-heading">{{ updates.monitoring }}</h3>
-                        <p class="text-blueGray-400 leading-loose">{{ updates.monitoring_description }}</p>
+            {% for talent in updates.talents %}
+                <div class="w-full md:w-1/2 lg:w-1/3 px-3 mb-8 md:mb-12">
+                    <div class="flex items-start">
+                        <div class="mr-6 p-3 bg-blue-600 rounded-full text-white">
+                            <svg class="w-10 h-10" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+                            </svg>
+                        </div>
+                        <div class="mt-4">
+                            <h3 class="mb-3 text-xl font-semibold font-heading">{{ talent.name }}</h3>
+                            <p class="text-blueGray-400 leading-loose">{{ talent.description }}</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="w-full md:w-1/2 lg:w-1/3 px-3 mb-8 md:mb-12">
-                <div class="flex items-start">
-                    <div class="mr-6 p-3 bg-blue-600 rounded-full text-white">
-                        <svg class="w-10 h-10" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
-                        </svg>
-                    </div>
-                    <div class="mt-4">
-                        <h3 class="mb-3 text-xl font-semibold font-heading">{{ updates.email_delivery }}</h3>
-                        <p class="text-blueGray-400 leading-loose">{{ updates.email_delivery_description }}</p>
-                    </div>
-                </div>
-            </div>
-            <div class="w-full md:w-1/2 lg:w-1/3 px-3 mb-8 md:mb-12">
-                <div class="flex items-start">
-                    <div class="mr-6 p-3 bg-blue-600 rounded-full text-white">
-                        <svg class="w-10 h-10" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-                        </svg>
-                    </div>
-                    <div class="mt-4">
-                        <h3 class="mb-3 text-xl font-semibold font-heading">{{ updates.video_processing }}</h3>
-                        <p class="text-blueGray-400 leading-loose">{{ updates.video_processing_description }}</p>
-                    </div>
-                </div>
-            </div>
-            <div class="w-full md:w-1/2 lg:w-1/3 px-3 mb-8 md:mb-12">
-                <div class="flex items-start">
-                    <div class="mr-6 p-3 bg-blue-600 rounded-full text-white">
-                        <svg class="w-10 h-10" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
-                        </svg>
-                    </div>
-                    <div class="mt-4">
-                        <h3 class="mb-3 text-xl font-semibold font-heading">{{ updates.data_processing }}</h3>
-                        <p class="text-blueGray-400 leading-loose">{{ updates.data_processing_description }}</p>
-                    </div>
-                </div>
-            </div>
-            <div class="w-full md:w-1/2 lg:w-1/3 px-3 mb-8 md:mb-12">
-                <div class="flex items-start">
-                    <div class="mr-6 p-3 bg-blue-600 rounded-full text-white">
-                        <svg class="w-10 h-10" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
-                        </svg>
-                    </div>
-                    <div class="mt-4">
-                        <h3 class="mb-3 text-xl font-semibold font-heading">{{ updates.error_handling }}</h3>
-                        <p class="text-blueGray-400 leading-loose">{{ updates.error_description }}</p>
-                    </div>
-                </div>
-            </div>
-            <div class="w-full md:w-1/2 lg:w-1/3 px-3 mb-8 md:mb-12">
-                <div class="flex items-start">
-                    <div class="mr-6 p-3 bg-blue-600 rounded-full text-white">
-                        <svg class="w-10 h-10" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
-                        </svg>
-                    </div>
-                    <div class="mt-4">
-                        <h3 class="mb-3 text-xl font-semibold font-heading">{{ updates.searching }}</h3>
-                        <p class="text-blueGray-400 leading-loose">{{ updates.searching_description }}</p>
-                    </div>
-                </div>
-            </div>
-            <div class="w-full md:w-1/2 lg:w-1/3 px-3 mb-8 md:mb-12">
-                <div class="flex items-start">
-                    <div class="mr-6 p-3 bg-blue-600 rounded-full text-white">
-                        <svg class="w-10 h-10" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"></path>
-                        </svg>
-                    </div>
-                    <div class="mt-4">
-                        <h3 class="mb-3 text-xl font-semibold font-heading">{{ updates.API_integration }}</h3>
-                        <p class="text-blueGray-400 leading-loose">{{ updates.API_integration_description }}</p>
-                    </div>
-                </div>
-            </div>
-            <div class="w-full md:w-1/2 lg:w-1/3 px-3 mb-8 md:mb-12">
-                <div class="flex items-start">
-                    <div class="mr-6 p-3 bg-blue-600 rounded-full text-white">
-                        <svg class="w-10 h-10" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
-                        </svg>
-                    </div>
-                    <div class="mt-4">
-                        <h3 class="mb-3 text-xl font-semibold font-heading">{{ updates.security }}</h3>
-                        <p class="text-blueGray-400 leading-loose">{{ updates.security_description }}</p>
-                    </div>
-                </div>
-            </div>
+            {% endfor %}
         </div>
     </div>
 </section>
