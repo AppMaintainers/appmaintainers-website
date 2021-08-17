@@ -1,7 +1,12 @@
 general:
   company: App Maintainers
   title: App Maintainers | Ruby on Rails fejlesztés & karbantartás
-  language: magyar
+  language: en
+  lang_selector: EN
+  flag_alt: UK flag
+  flag_name: uk-flag
+  js_function: setEnDefault()
+  lang_url: /
   description: Egyedi szoftvereket fejlesztünk és tartunk karban. Az általunk készített megoldások bármilyen eszközön használhatóak. Reszponzív webalkalmazásainkat akár mobil alkalmazásként is  elérhetővé teheti.
   keywords:  web, fejlesztő, web design, webfejlesztő, website builder, web design, website design, web de, web development
   navbar_1: Fejlesztés

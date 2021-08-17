@@ -1,7 +1,12 @@
 general:
   company: App Maintainers
   title: App Maintainers | Ruby on Rails development & maintenance
-  language: english
+  language: hu
+  lang_selector: HU
+  flag_alt: Hu flag
+  flag_name: hu-flag
+  js_function: setHunDefault()
+  lang_url: /hu/
   description: We do tailor made software development and maintenance. Our solutions can be used on any device. You can even make our responsive web applications available as mobile apps.
   keywords: web, developer, web design, web developer, website builder, web design, website design, web de, web development
   navbar_1: Development
