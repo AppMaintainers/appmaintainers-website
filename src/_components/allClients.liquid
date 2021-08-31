@@ -1,0 +1,6 @@
+{% for i in (0..1) %}
+    {% if i%2 == 0 %}
+        {% render "client1", metadata: site.data.general_en.general, clients: page.clients %}
+        {% render "client2", metadata: site.data.general_en.general, clients: page.clients %}
+    {% endif %}
+{% endfor %}
