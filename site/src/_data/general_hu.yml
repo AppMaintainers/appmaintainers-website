@@ -9,10 +9,16 @@ general:
   lang_url: /
   description: Egyedi szoftvereket fejlesztünk és tartunk karban. Az általunk készített megoldások bármilyen eszközön használhatóak. Reszponzív webalkalmazásainkat akár mobil alkalmazásként is  elérhetővé teheti.
   keywords:  web, fejlesztő, web design, webfejlesztő, website builder, web design, website design, web de, web development
-  navbar_1: Fejlesztés
-  navbar_2: Karbantartás
-  navbar_3: Frissítések
-  navbar_4: Rólunk
+  navbar:
+    items:
+        - name: Fejlesztés
+          tag: Dev
+        - name: Karbantartás
+          tag: Maintenance
+        - name: Frissítések
+          tag: Update
+        - name: Rólunk
+          tag: About
   book_video: Foglaljon videóhívás időpontot!
   send_email: Írjon nekünk!
   write_to_us: Írjon nekünk!

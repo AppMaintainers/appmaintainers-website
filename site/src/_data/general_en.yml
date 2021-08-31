@@ -9,10 +9,16 @@ general:
   lang_url: /hu/
   description: We do tailor made software development and maintenance. Our solutions can be used on any device. You can even make our responsive web applications available as mobile apps.
   keywords: web, developer, web design, web developer, website builder, web design, website design, web de, web development
-  navbar_1: Development
-  navbar_2: Maintenance
-  navbar_3: Updates
-  navbar_4: About us
+  navbar:
+    items:
+      - name: Development
+        tag: Dev
+      - name: Maintenance
+        tag: Maintenance
+      - name: Updates
+        tag: Update
+      - name: About us
+        tag: About
   book_video: Book a video call!
   send_email: Send an email!
   write_to_us: Write to us!

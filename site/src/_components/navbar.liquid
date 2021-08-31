@@ -11,10 +11,9 @@
                 </button>
             </div>
             <ul class="hidden lg:flex ml-12 mr-auto space-x-12">
-                <li><a class="text-sm text-blueGray-400 hover:text-blueGray-500 hidden" href="#Dev">{{ metadata.navbar_1 }}</a></li>
-                <li><a class="text-sm text-blueGray-400 hover:text-blueGray-500 hidden" href="#Maintenance">{{ metadata.navbar_2 }}</a></li>
-                <li><a class="text-sm text-blueGray-400 hover:text-blueGray-500 hidden" href="#Update">{{ metadata.navbar_3 }}</a></li>
-                <li><a class="text-sm text-blueGray-400 hover:text-blueGray-500 hidden" href="#About">{{ metadata.navbar_4 }}</a></li>
+                {% for nav_element in metadata.items %}
+                    <li><a class="text-sm text-blueGray-400 hover:text-blueGray-500 hidden" href="#{{ nav_element.tag }}">{{ nav_element.name }}</a></li>
+                {% endfor %}
                 <li><a class="text-sm text-blueGray-400 hover:text-blueGray-500 hidden" href="{{ metadata.lang_url }}" lang="{{ metadata.language }}" hreflang="{{ metadata.language }}" onclick="{{ metadata.js_function }}">{{ metadata.lang_selector }}</a></li>
             </ul>
                 <div class="hidden lg:block"><a class="mr-2 inline-block px-4 py-3 text-xs text-blue-600 hover:text-blue-700 font-semibold leading-none border border-blue-200 hover:border-blue-300 rounded" href="mailto:{{ metadata.email }}">{{ metadata.write_to_us }}</a><a class="mr-2 inline-block px-4 py-3 text-xs text-white-600 hover:bg-blue-700 font-semibold leading-none bg-blue-600 border text-white rounded" data-savvycal-embed href="https://savvycal.com/app-maintainers/{{ metadata.savvycal_ending }}">{{ metadata.book_video }}</a><a class="mr-2 inline-block px-4 py-3 text-xs text-blue-600" href="{{ metadata.lang_url }}" lang="{{ metadata.language }}" hreflang="{{ metadata.language }}" onclick="{{ metadata.js_function }}">
@@ -33,10 +32,9 @@
             </div>
             <div>
                 <ul>
-                    <li><a class="text-sm text-blueGray-400 hover:text-blueGray-500 hidden" href="#Dev">{{ metadata.navbar_1 }}</a></li>
-                    <li><a class="text-sm text-blueGray-400 hover:text-blueGray-500 hidden" href="#Maintenance">{{ metadata.navbar_2 }}</a></li>
-                    <li><a class="text-sm text-blueGray-400 hover:text-blueGray-500 hidden" href="#Update">{{ metadata.navbar_3 }}</a></li>
-                    <li><a class="text-sm text-blueGray-400 hover:text-blueGray-500 hidden" href="#About">{{ metadata.navbar_4 }}</a></li>
+                    {% for nav_element in metadata.items %}
+                        <li><a class="text-sm text-blueGray-400 hover:text-blueGray-500 hidden" href="#{{ nav_element.tag }}">{{ nav_element.name }}</a></li>
+                    {% endfor %}
                     <li><a class="text-sm text-blueGray-400 hover:text-blueGray-500 hidden" href="{{ metadata.lang_url }}" lang="{{ metadata.language }}" hreflang="{{ metadata.language }}" onclick="{{ metadata.js_function }}">{{ metadata.lang_selector }}</a></li>
                 </ul>
                 <div class="mt-4 pt-6 border-t border-blueGray-100"><a class="block px-4 py-3 mb-3 text-xs text-center font-semibold leading-none bg-blue-600 hover:bg-blue-700 text-white rounded" data-savvycal-embed href="https://savvycal.com/app-maintainers/{{ metadata.savvycal_ending }}">{{ metadata.book_video }}</a><a class="block px-4 py-3 mb-2 text-xs text-center text-blue-600 hover:text-blue-700 font-semibold leading-none border border-blue-200 hover:border-blue-300 rounded" href="mailto:{{ metadata.email }}">{{ metadata.write_to_us }}</a></div>
@@ -59,10 +57,9 @@
                 </button>
             </div>
             <ul class="hidden lg:flex lg:items-center lg:w-auto lg:space-x-12">
-                <li><a class="text-sm text-blueGray-400 hover:text-blueGray-500 hidden" href="#Dev">{{ metadata.navbar_1 }}</a></li>
-                <li><a class="text-sm text-blueGray-400 hover:text-blueGray-500 hidden" href="#Maintenance">{{ metadata.navbar_2 }}</a></li>
-                <li><a class="text-sm text-blueGray-400 hover:text-blueGray-500 hidden" href="#Update">{{ metadata.navbar_3 }}</a></li>
-                <li><a class="text-sm text-blueGray-400 hover:text-blueGray-500 hidden" href="#About">{{ metadata.navbar_4 }}</a></li>
+                {% for nav_element in metadata.items %}
+                    <li><a class="text-sm text-blueGray-400 hover:text-blueGray-500 hidden" href="#{{ nav_element.tag }}">{{ nav_element.name }}</a></li>
+                {% endfor %}
                 <li><a class="text-sm text-blueGray-400 hover:text-blueGray-500 hidden" href="{{ metadata.lang_url }}" lang="{{ metadata.language }}" hreflang="{{ metadata.language }}" onclick="{{ metadata.js_function }}">{{ metadata.lang_selector }}</a></li>
             </ul>
             <div class="hidden lg:block"><a class="mr-2 inline-block px-4 py-3 text-xs text-blue-600 hover:text-blue-700 font-semibold leading-none border border-blue-200 hover:border-blue-300 rounded" href="mailto:{{ metadata.email }}">{{ metadata.send_email }}</a><a class="inline-block px-4 py-3 text-xs font-semibold leading-none bg-blue-600 hover:bg-blue-700 text-white rounded" data-savvycal-embed href="https://savvycal.com/app-maintainers/{{ metadata.savvycal_ending }}">{{ metadata.book_video }}</a></div>
@@ -94,10 +91,9 @@
             </div>
             <div>
                 <ul class="hidden">
-                    <li><a class="text-sm text-blueGray-400 hover:text-blueGray-500 hidden" href="#Dev">{{ metadata.navbar_1 }}</a></li>
-                    <li><a class="text-sm text-blueGray-400 hover:text-blueGray-500 hidden" href="#Maintenance">{{ metadata.navbar_2 }}</a></li>
-                    <li><a class="text-sm text-blueGray-400 hover:text-blueGray-500 hidden" href="#Update">{{ metadata.navbar_3 }}</a></li>
-                    <li><a class="text-sm text-blueGray-400 hover:text-blueGray-500 hidden" href="#About">{{ metadata.navbar_4 }}</a></li>
+                    {% for nav_element in metadata.items %}
+                        <li><a class="text-sm text-blueGray-400 hover:text-blueGray-500 hidden" href="#{{ nav_element.tag }}">{{ nav_element.name }}</a></li>
+                    {% endfor %}
                 </ul>
                 <div class="mt-4 pt-6 border-t border-blueGray-100"><a class="block px-4 py-3 mb-3 text-xs text-center font-semibold leading-none bg-blue-600 hover:bg-blue-700 text-white rounded" data-savvycal-embed href="https://savvycal.com/app-maintainers/{{ metadata.savvycal_ending }}">{{ metadata.book_video }}</a><a class="block px-4 py-3 mb-2 text-xs text-center text-blue-600 hover:text-blue-700 font-semibold leading-none border border-blue-200 hover:border-blue-300 rounded" href="mailto:{{ metadata.email }}">{{ metadata.send_email }}</a><a class="block px-4 py-3 mb-2 text-xs text-center text-blue-600 hover:text-blue-700 font-semibold leading-none" href="{{ metadata.lang_url }}" hreflang="{{ metadata.language }}" lang="{{ metadata.language }}" onclick="{{ metadata.js_function }}">
                         <div class="flag-text--inline mr-2 inline-block px-4 py-3 text-xs hover:text-blue-700 font-semibold leading-none justify-center"><img class="icon" src="/metis-assets/icons/{{ metadata.flag_name }}.svg" style="float: left; padding-right: 5px;" alt="{{ metadata.flag_alt }}" width="24"><span>{{ metadata.lang_selector }}</span></div></a></div>
