@@ -1,50 +1,70 @@
-# Tailwind Builder
+# Bridgetown Website README
 
-NOTE: npm commands overwrite the ./public directory.
+Welcome to your new Bridgetown website! You can update this README file to provide additional context and setup information for yourself or other contributors.
 
-## 1. Getting Started
+## Table of Contents
 
-Project's source files are placed in ./src/ directory. 
+- [Prerequisites](#prerequisites)
+- [Install](#install)
+- [Development](#development)
+- [Commands](#commands)
+- [Deployment](#deployment)
+- [Contributing](#contributing)
 
-* ./src/assets - default static files (eg. image placeholders). You should replace them with your own files.
+## Prerequisites
 
-* ./src/tailwind/ - Tailwind config file used to build the theme. Variables used in Theme Customizer are located in tailwind.config.js file.
+- [GCC](https://gcc.gnu.org/install/)
+- [Make](https://www.gnu.org/software/make/)
+- [Ruby](https://www.ruby-lang.org/en/downloads/)
+  - `>= 2.5`
+- [Bridgetown Gem](https://rubygems.org/gems/bridgetown)
+  - `gem install bundler bridgetown -N`
+- [Node](https://nodejs.org)
+  - `>= 10.13`
+- [Yarn](https://yarnpkg.com)
 
-* ./src/*.pug - All your pages (templates) are stored in separated .pug files.
+## Install
 
-## 2. Installation
-
+```sh
+cd bridgetown-site-folder
+bundle install && yarn install
 ```
-# Install dependencies
-npm install 
+> Learn more: [Bridgetown Getting Started Documentation](https://www.bridgetownrb.com/docs/).
 
-# Run dev server with live preview (Browsersync)
-npm run watch
+## Development
 
-# Or make a production build 
-npm run build
+To start your site in development mode, run `yarn start` and navigate to [localhost:4000](https://localhost:4000/)!
+
+Use a [theme](https://github.com/topics/bridgetown-theme), add some [plugins](https://www.bridgetownrb.com/plugins/), and/or run some [automations](https://github.com/topics/bridgetown-automation) to get started quickly.
+
+### Commands
+
+```sh
+# running locally
+yarn start
+
+# build & deploy to production
+yarn deploy
+
+# load the site up within a Ruby console (IRB)
+bundle exec bridgetown console
 ```
 
-If you want PurgeCSS to delete unnecessary CSS classes (and create a smaller CSS file as a result) set NODE_ENV to production, e.g:
+> Learn more: [Bridgetown CLI Documentation](https://www.bridgetownrb.com/docs/command-line-usage)
 
-```
-# Make a production build and automatically use PurgeCSS
-# to remove CSS classes that aren't used.
+## Deployment
 
-NODE_ENV=production npm run build
-```
+You can deploy Bridgetown sites on "Jamstack" hosts (Netlify, Vercel, Render, etc.) or virtually any tranditional web server by simply building and copying the output folder to your HTML root.
 
-## 3. Contact
+> Read the [Bridgetown Deployment Documentation](https://www.bridgetownrb.com/docs/deployment) for more information.
 
-If you have found any bugs in the Tailwind Builder, have any questions, 
-comments or ideas for new features feel free to contact us:
+## Contributing
 
-support@shuffle.dev
+If repo is on GitHub:
 
-## 4. Credits & Special thanks
-
-We use placeholders from:
-
-Icons: https://heroicons.dev
-Pictures: https://unsplash.com/
-Illustrations: http://icons8.net/ (It's a commercial library, and that's why we can't share full SVG sources. You can get complete sources on their website.)
+1. Fork it
+2. Clone the fork using `git clone` to your local development machine.
+3. Create your feature branch (`git checkout -b my-new-feature`)
+4. Commit your changes (`git commit -am 'Add some feature'`)
+5. Push to the branch (`git push origin my-new-feature`)
+6. Create a new Pull Request
