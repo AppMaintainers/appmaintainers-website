@@ -13,7 +13,7 @@
                 <div class="w-full md:w-1/2 lg:w-1/4 px-3 mb-6">
                     <div class="pt-8 px-6 pb-6 bg-white text-center rounded shadow">
                         <svg class="w-10 h-10 mx-auto mb-4 text-blue-600" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="{{ item.logo_path }}"></path>
                         </svg>
                         <h3 class="mb-2 font-bold font-heading">{{ item.name }}</h3>
                         <p class="text-sm text-blueGray-400">{{ item.description }}</p>
@@ -31,7 +31,7 @@
                     <div class="flex items-start">
                         <div class="mr-6 p-3 bg-blue-600 rounded-full text-white">
                             <svg class="w-10 h-10" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="{{ talent.logo_path }}"></path>
                             </svg>
                         </div>
                         <div class="mt-4">

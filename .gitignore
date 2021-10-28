@@ -4,6 +4,8 @@ output
 .bridgetown-metadata
 .bridgetown-webpack
 
+#rubymine
+.idea
 # Dependency folders
 node_modules
 bower_components
