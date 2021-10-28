@@ -13,9 +13,7 @@
                     {% for item in clients.clients[0].items %}
                         <div class="flex items-start py-4">
                             <div class="w-8 mr-5 text-blue-500">
-                                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="{{ item.logo_path }}"></path>
-                                </svg>
+                                <img class="w-8 h-8" src="{{item.logo_path}}" />
                             </div>
                             <div>
                                 <h3 class="mb-2 text-xl font-semibold font-heading">{{ item.name }}</h3>
@@ -39,9 +37,7 @@
                     {% for item in clients.clients[1].items %}
                         <div class="flex items-start py-4">
                             <div class="w-8 mr-5 text-blue-500">
-                                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="{{ item.logo_path }}"></path>
-                                </svg>
+                                <img class="w-8 h-8" src="{{item.logo_path}}" />
                             </div>
                             <div>
                                 <h3 class="mb-2 text-xl font-semibold font-heading">{{ item.name }}</h3>

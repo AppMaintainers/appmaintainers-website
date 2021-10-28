@@ -12,9 +12,7 @@
             {% for item in updates.items %}
                 <div class="w-full md:w-1/2 lg:w-1/4 px-3 mb-6">
                     <div class="pt-8 px-6 pb-6 bg-white text-center rounded shadow">
-                        <svg class="w-10 h-10 mx-auto mb-4 text-blue-600" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="{{ item.logo_path }}"></path>
-                        </svg>
+                        <img class="w-10 h-10 mx-auto mb-4 text-blue-600" src="{{item.logo_path}}" />
                         <h3 class="mb-2 font-bold font-heading">{{ item.name }}</h3>
                         <p class="text-sm text-blueGray-400">{{ item.description }}</p>
                     </div>
@@ -30,9 +28,7 @@
                 <div class="w-full md:w-1/2 lg:w-1/3 px-3 mb-8 md:mb-12">
                     <div class="flex items-start">
                         <div class="mr-6 p-3 bg-blue-600 rounded-full text-white">
-                            <svg class="w-10 h-10" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="{{ talent.logo_path }}"></path>
-                            </svg>
+                            <img class="w-10 h-10" src="{{talent.logo_path}}" />
                         </div>
                         <div class="mt-4">
                             <h3 class="mb-3 text-xl font-semibold font-heading">{{ talent.name }}</h3>
