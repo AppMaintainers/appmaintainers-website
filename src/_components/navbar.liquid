@@ -16,7 +16,14 @@
                 {% endfor %}
                 <li><a class="text-sm text-blueGray-400 hover:text-blueGray-500 hidden" href="{{ metadata.lang_url }}" lang="{{ metadata.language }}" hreflang="{{ metadata.language }}" onclick="{{ metadata.js_function }}">{{ metadata.lang_selector }}</a></li>
             </ul>
-                <div class="hidden lg:block"><a class="mr-2 inline-block px-4 py-3 text-xs text-blue-600 hover:text-blue-700 font-semibold leading-none border border-blue-200 hover:border-blue-300 rounded" href="mailto:{{ metadata.email }}">{{ metadata.write_to_us }}</a><a class="mr-2 inline-block px-4 py-3 text-xs text-white-600 hover:bg-blue-700 font-semibold leading-none bg-blue-600 border text-white rounded" data-savvycal-embed href="https://savvycal.com/app-maintainers/{{ metadata.savvycal_ending }}">{{ metadata.book_video }}</a><a class="mr-2 inline-block px-4 py-3 text-xs text-blue-600" href="{{ metadata.lang_url }}" lang="{{ metadata.language }}" hreflang="{{ metadata.language }}" onclick="{{ metadata.js_function }}">
+                <div class="hidden lg:block">
+                    <a class="mr-2 inline-block px-4 py-3 text-xs text-blue-600 hover:text-blue-700 font-semibold leading-none border border-blue-200 hover:border-blue-300 rounded" href="mailto:{{ metadata.email }}">{{ metadata.write_to_us }}</a>
+                    <!-- Calendly link widget begin -->
+                    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+                    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+                    <a class="mr-2 inline-block px-4 py-3 text-xs text-white-600 hover:bg-blue-700 font-semibold leading-none bg-blue-600 border text-white rounded" href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/juhat/30min?hide_event_type_details=1&hide_gdpr_banner=1'});return false;">{{ metadata.book_video }}</a>
+                    <!-- Calendly link widget end -->
+                    <a class="mr-2 inline-block px-4 py-3 text-xs text-blue-600" href="{{ metadata.lang_url }}" lang="{{ metadata.language }}" hreflang="{{ metadata.language }}" onclick="{{ metadata.js_function }}">
                     <div class="flag-text--inline mr-2 inline-block px-4 py-3 text-xs hover:text-blue-700 font-semibold leading-none">   <img class="icon" src="/metis-assets/icons/{{ metadata.flag_name }}.svg" style="float: left; padding-right: 5px;" alt="{{ metadata.flag_alt }}" width="24"><span>{{ metadata.lang_selector }}</span></div></a></div>
         </nav>
     </div>
