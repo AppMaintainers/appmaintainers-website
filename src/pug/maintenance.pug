@@ -1,0 +1,331 @@
+html(lang="en")
+    head
+        title You have an existing Â Ruby on Rails application - let's talk about maintenance - App Maintainers
+        meta(charset="utf-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1, shrink-to-fit=no")
+        link(rel="preconnect", href="https://fonts.gstatic.com")
+        link(rel="preconnect", href="https://fonts.gstatic.com")
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Manrope:wght@700;800&display=swap")
+        link(rel="stylesheet", href="css/tailwind/tailwind.min.css")
+        link(rel="stylesheet", href="css/main.css")
+        link(rel="icon", type="image/png", sizes="32x32", href="shuffle-for-tailwind.png")
+        script(src="js/main.js")
+    body(class="antialiased bg-body text-body font-body")
+        div(class="")
+            section
+                nav(class="flex justify-between items-center bg-orange-200 py-6 px-10 relative z-10")
+                    a(class="text-lg font-bold", href="index.html")
+                        img(class="h-16", src="images/AM-logo-transparent-horizontal.png", alt="", width="auto")
+                    div(class="xl:hidden")
+                        button(class="navbar-burger focus:outline-none text-indigo-900 hover:text-indigo-800")
+                            svg(class="block h-6 w-6", fill="currentColor", viewbox="0 0 20 20", xmlns="http://www.w3.org/2000/svg")
+                                title Mobile menu
+                                path(d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z")
+                    ul(class="hidden xl:flex absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2")
+                        li
+                            a(class="text-lg mr-10 2xl:mr-16 font-extrabold hover:text-indigo-800", href="development.html") Development
+                        li
+                            a(class="text-lg mr-10 2xl:mr-16 font-extrabold hover:text-indigo-800", href="maintenance.html") Archeology / Maintenance
+                        li
+                            a(class="text-lg mr-10 2xl:mr-16 font-extrabold hover:text-indigo-800", href="why_ruby_on_rails.html") Why Ruby on Rails?
+                        li
+                            a(class="text-lg font-extrabold hover:text-indigo-800 hidden", href="#") Resources
+                    div(class="hidden xl:flex items-center")
+                        a(class="inline-block mr-6 text-lg font-extrabold hover:text-indigo-800 hidden", href="#") Log In
+                        a(class="inline-block py-4 px-6 text-center leading-6 text-lg text-white font-extrabold bg-indigo-800 hover:bg-indigo-900 border-3 border-indigo-900 shadow rounded transition duration-200", href="contact.html") Let's talk!
+                div(class="hidden navbar-menu relative z-50")
+                    div(class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25")
+                    nav(class="fixed top-0 left-0 bottom-0 flex flex-col w-full md:w-5/6 max-w-sm py-8 px-8 bg-orange-200 border-r overflow-y-auto")
+                        div(class="flex items-center mb-8")
+                            a(class="mr-auto text-2xl font-bold leading-none", href="#")
+                                img(class="h-6", src="nigodo-assets/logo-nigodo.svg", alt="", width="auto")
+                            button(class="navbar-close")
+                                svg(class="h-6 w-6 text-gray-500 cursor-pointer hover:text-gray-500", xmlns="http://www.w3.org/2000/svg", fill="none", viewbox="0 0 24 24", stroke="currentColor")
+                                    path(stroke-linecap="round", stroke-linejoin="round", stroke-width="2", d="M6 18L18 6M6 6l12 12")
+                        div(class="my-auto")
+                            ul(class="py-10")
+                                li(class="mb-1")
+                                    a(class="block p-4 text-lg font-extrabold hover:bg-orange-300 rounded", href="#") Product
+                                li(class="mb-1")
+                                    a(class="block p-4 text-lg font-extrabold hover:bg-orange-300 rounded", href="#") Features
+                                li(class="mb-1")
+                                    a(class="block p-4 text-lg font-extrabold hover:bg-orange-300 rounded", href="#") Pricing
+                                li(class="mb-1")
+                                    a(class="block p-4 text-lg font-extrabold hover:bg-orange-300 rounded", href="#") Resources
+                        div
+                            a(class="block mb-6 text-center leading-6 text-lg font-extrabold hover:text-indigo-800", href="#") Log In
+                            a(class="block py-4 px-6 text-center leading-6 text-lg text-white font-extrabold bg-indigo-800 hover:bg-indigo-900 border-3 border-indigo-900 shadow rounded transition duration-200", href="#") Sign Up
+            section(class="pb-24 bg-orange-200")
+                nav(class="flex mb-16 justify-between items-center py-6 px-10 relative hidden")
+                    a(class="text-lg font-bold", href="#")
+                        img(class="h-8", src="nigodo-assets/logo-nigodo.svg", alt="", width="auto")
+                    div(class="xl:hidden")
+                        button(class="navbar-burger focus:outline-none text-indigo-900 hover:text-indigo-800")
+                            svg(class="block h-6 w-6", fill="currentColor", viewbox="0 0 20 20", xmlns="http://www.w3.org/2000/svg")
+                                title Mobile menu
+                                path(d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z")
+                    ul(class="hidden xl:flex absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2")
+                        li
+                            a(class="text-lg mr-10 2xl:mr-16 font-extrabold hover:text-indigo-800", href="#") Product
+                        li
+                            a(class="text-lg mr-10 2xl:mr-16 font-extrabold hover:text-indigo-800", href="#") Features
+                        li
+                            a(class="text-lg mr-10 2xl:mr-16 font-extrabold hover:text-indigo-800", href="#") Pricing
+                        li
+                            a(class="text-lg font-extrabold hover:text-indigo-800", href="#") Resources
+                    div(class="hidden xl:flex items-center")
+                        a(class="inline-block mr-6 text-lg font-extrabold hover:text-indigo-800", href="#") Log In
+                        a(class="inline-block py-4 px-6 text-center leading-6 text-lg text-white font-extrabold bg-indigo-800 hover:bg-indigo-900 border-3 border-indigo-900 shadow rounded transition duration-200", href="#") Sign Up
+                div(class="container px-4 mx-auto relative")
+                    div(class="flex flex-wrap -mx-4 items-center")
+                        div(class="w-full lg:w-1/2 px-4 mb-12 lg:mb-0")
+                            div(class="max-w-lg mx-auto")
+                                span(class="text-xl md:text-2xl font-extrabold text-orange-500") Fractional development solutions
+                                h1(class="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-heading mt-1 mb-6 fade-in-down") You have an existing Â Ruby on Rails application - let's talk about maintenance
+                                p(class="text-xl md:text-2xl font-extrabold leading-8 mb-10") Our name - App Maintainers - comes from the fact that we often take over existing codebases. We like to work with time proven businesses and applications where the development needs are based on real user feedback.
+                                div
+                                    div(class="flex mb-4 items-center")
+                                        img(class="block w-6 h-6 mr-2 object-contain", src="nigodo-assets/circle-icon-green.svg", alt="")
+                                        span(class="text-lg font-extrabold") We upgrade Ruby on Rails applications
+                                    div(class="flex mb-4 items-center")
+                                        img(class="block w-6 h-6 mr-2 object-contain", src="nigodo-assets/circle-icon-green.svg", alt="")
+                                        span(class="text-lg font-extrabold") We upgrade major dependencies to make the application secure
+                                    div(class="flex items-center")
+                                        img(class="block w-6 h-6 mr-2 object-contain", src="nigodo-assets/circle-icon-green.svg", alt="")
+                                        span(class="text-lg font-extrabold") We refactor various parts to make further development possible
+                        div(class="w-full lg:w-1/2 px-4 mt-4")
+                            div(class="max-w-xl mx-auto py-16 px-6 md:px-14 bg-white border-3 border-indigo-900 shadow-md rounded-2xl text-center")
+                                img(class="block mb-6 mx-auto h-40", src="images/AM-logo-transparent.png", alt="")
+                                h2(class="text-2xl sm:text-3xl font-extrabold mb-2") Enroll your application!
+                                p(class="sm:text-lg font-extrabold text-indigo-500 mb-8") Get a maintenance action plan based on your specific needs!
+                                div(class="text-left mb-4 md:mb-6")
+                                    label(class="font-extrabold", for="") Email
+                                    input(class="block w-full mt-2 p-4 text-lg font-extrabold placeholder-indigo-900 shadow border-2 border-indigo-900 rounded", type="email", placeholder="hello@shuffle.dev")
+                                a(class="block mb-6 py-4 px-6 text-center leading-6 text-lg text-white font-extrabold bg-indigo-800 hover:bg-indigo-900 border-3 border-indigo-900 shadow rounded transition duration-200", href="contact.html") Sign Up
+                                div(class="flex mb-5 items-center")
+                                    div(class="h-px w-full bg-indigo-100")
+                                    span(class="mx-2 text-sm text-indigo-300") OR
+                                    div(class="h-px w-full bg-indigo-100")
+                                a(class="block mb-4 py-4 px-6 text-center hover:text-white leading-6 text-lg font-extrabold bg-white hover:bg-indigo-800 border-3 border-indigo-900 shadow rounded transition duration-200", href="#") Sign in with Google
+                                a(class="block mb-4 py-4 px-6 text-center hover:text-white leading-6 text-lg font-extrabold bg-white hover:bg-indigo-800 border-3 border-indigo-900 shadow rounded transition duration-200", href="#") Sign in with Facebook
+                                a(class="block py-4 px-6 text-center hover:text-white leading-6 text-lg font-extrabold bg-white hover:bg-indigo-800 border-3 border-indigo-900 shadow rounded transition duration-200", href="#") Sign in with Apple
+                div(class="hidden navbar-menu relative z-50")
+                    div(class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25")
+                    nav(class="fixed top-0 left-0 bottom-0 flex flex-col w-full md:w-5/6 max-w-sm py-8 px-8 bg-white border-r overflow-y-auto")
+                        div(class="flex items-center mb-8")
+                            a(class="mr-auto text-2xl font-bold leading-none", href="#")
+                                img(class="h-6", src="nigodo-assets/logo-nigodo.svg", alt="", width="auto")
+                            button(class="navbar-close")
+                                svg(class="h-6 w-6 text-gray-500 cursor-pointer hover:text-gray-500", xmlns="http://www.w3.org/2000/svg", fill="none", viewbox="0 0 24 24", stroke="currentColor")
+                                    path(stroke-linecap="round", stroke-linejoin="round", stroke-width="2", d="M6 18L18 6M6 6l12 12")
+                        div(class="my-auto")
+                            ul(class="py-10")
+                                li(class="mb-1")
+                                    a(class="block p-4 text-lg font-extrabold hover:bg-gray-50 rounded", href="#") Product
+                                li(class="mb-1")
+                                    a(class="block p-4 text-lg font-extrabold hover:bg-gray-50 rounded", href="#") Features
+                                li(class="mb-1")
+                                    a(class="block p-4 text-lg font-extrabold hover:bg-gray-50 rounded", href="#") Pricing
+                                li(class="mb-1")
+                                    a(class="block p-4 text-lg font-extrabold hover:bg-gray-50 rounded", href="#") Resources
+                        div
+                            a(class="block mb-6 text-center leading-6 text-lg font-extrabold hover:text-indigo-800", href="#") Log In
+                            a(class="block py-4 px-6 text-center leading-6 text-lg text-white font-extrabold bg-indigo-800 hover:bg-indigo-900 border-3 border-indigo-900 shadow rounded transition duration-200", href="#") Sign Up
+            section(class="py-26 bg-white")
+                div(class="container px-4 mx-auto")
+                    div(class="flex flex-wrap -mx-4 items-center")
+                        div(class="w-full lg:w-1/2 px-4 mb-20 lg:mb-0")
+                            span(class="text-lg font-extrabold text-indigo-500") How maintenance starts
+                            h1(class="max-w-xl text-3xl md:text-4xl font-extrabold font-heading mt-2 mb-16") Our 4 stepsÂ workflow
+                            div(class="flex flex-wrap -mx-4 -mb-10")
+                                div(class="w-full md:w-1/2 px-4 mb-10")
+                                    div(class="max-w-xs")
+                                        div(class="inline-flex items-center justify-center mb-6 bg-white rounded-full border-3 border-indigo-900 text-indigo-900 shadow-md h-20 w-20")
+                                            span(class="text-3xl font-extrabold leading-8") 1
+                                        h3(class="text-2xl font-extrabold mb-5") Evaluate
+                                        p(class="font-bold") Send us some details and get a free maintenance action plan tailored to your specific situation!
+                                div(class="w-full md:w-1/2 px-4 mb-10")
+                                    div(class="max-w-xs")
+                                        div(class="inline-flex items-center justify-center mb-6 bg-white rounded-full border-3 border-indigo-900 text-indigo-900 shadow-md w-20 h-20")
+                                            span(class="text-3xl font-extrabold leading-8") 2
+                                        h3(class="text-2xl font-extrabold mb-5") Secure
+                                        p(class="font-bold") Our first priority is to secure your application as much as we can.
+                                div(class="w-full md:w-1/2 px-4 mb-10")
+                                    div(class="max-w-xs")
+                                        div(class="inline-flex items-center justify-center mb-6 bg-white rounded-full border-3 border-indigo-900 text-indigo-900 shadow-md w-20 h-20")
+                                            span(class="text-3xl font-extrabold leading-8") 3
+                                        h3(class="text-2xl font-extrabold mb-5") Monitor
+                                        p(class="font-bold") We apply monitoring if needed to get real feedback what might be important to tackle on.
+                                div(class="w-full md:w-1/2 px-4 mb-10")
+                                    div(class="max-w-xs")
+                                        div(class="inline-flex items-center justify-center mb-6 bg-white rounded-full border-3 border-indigo-900 text-indigo-900 shadow-md w-20 h-20")
+                                            span(class="text-3xl font-extrabold leading-8") 4
+                                        h3(class="text-2xl font-extrabold mb-5") Upgrade
+                                        p(class="font-bold") We upgrade Ruby on Rails and Ruby step by step to bring you safety and performance improvements.
+                        div(class="w-full lg:w-1/2 px-4")
+                            img(class="block w-full h-128 object-cover border-3 border-indigo-900 rounded-2xl shadow-lg", src="https://images.unsplash.com/photo-1521898284481-a5ec348cb555?crop=entropy&cs=srgb&fm=jpg&ixid=MnwzMzIzMzB8MHwxfHNlYXJjaHw5Nnx8cHJvZ3JhbW1pbmd8ZW58MHx8fHwxNjgyMzU3NjUz&ixlib=rb-4.0.3&q=85&w=1920", alt="")
+            section(class="py-26 bg-white")
+                div(class="container px-4 mx-auto")
+                    span(class="text-lg font-extrabold text-indigo-500") Reflections on the development / maintainance journey
+                    h1(class="text-3xl md:text-4xl font-extrabold font-heading mt-3 mb-3") What our partners say
+                    p(class="text-xl font-extrabold leading-8 mb-16") Alongside of green field development, we have been happily upgraded Rails codebases frome Rails 2 to Rails 7 and made further development possible.
+                    div(class="flex flex-wrap -mx-2 -mb-8")
+                        div(class="w-full md:w-1/2 lg:w-1/3 px-4 mb-8")
+                            div(class="h-full max-w-md mx-auto py-10 px-6 md:px-10 bg-white border-3 border-indigo-900 rounded-2xl shadow-md")
+                                div(class="h-full flex flex-col")
+                                    h3(class="text-xl md:text-2xl font-extrabold leading-8 mb-auto") We have been working with App Maintainers for almost a decade - and it's not without reason. They have received even our craziest ideas with such care, creativity, and patient professionalism that we almost consider them as members of our own team.
+                                    h4(class="md:text-xl font-extrabold mt-10") Gergely LukÃ¡cshÃ¡zi
+                                    span(class="text-gray-400 font-bold") CEO at UrbanDialog
+                        div(class="w-full md:w-1/2 lg:w-1/3 px-4 mb-8")
+                            div(class="h-full max-w-md mx-auto py-10 px-6 md:px-10 bg-white border-3 border-indigo-900 rounded-2xl shadow-md")
+                                div(class="h-full flex flex-col")
+                                    h3(class="text-xl md:text-2xl font-extrabold leading-8 mb-auto") The App maintainers team, have worked with UNHCR on a long term project (8 years) â The Risk Register Tool. It is a simple yet an extremely efficient tool in capturing the risk information for country operations. This tool servers its purpose very well and it is highly appreciated by the colleagues if fields due to its simplicity. The quality of software development service delivered by App Maintainers is instrumental in the success of our application. App Maintainers are dedicated, highly professional and it has bee a please to work with them.  They were extremely responsive when we faced high severity issues and ensured it is solved in time. They have proposed innovative solutions to some of change requests which has elevated the quality of our application.
+                                    h4(class="md:text-xl font-extrabold mt-10") Kathyayini Pasupulati
+                                    span(class="text-gray-400 font-bold")  Information Management Officer at UNHCR
+                        div(class="w-full md:w-1/2 lg:w-1/3 px-4 mb-8")
+                            div(class="h-full max-w-md mx-auto py-10 px-6 md:px-10 bg-white border-3 border-indigo-900 rounded-2xl shadow-md")
+                                div(class="h-full flex flex-col")
+                                    h3(class="text-xl md:text-2xl font-extrabold leading-8 mb-auto") You won't regret it. We've seen amazing results already. Thanks guys, keep up the good work!
+                                    h4(class="md:text-xl font-extrabold mt-10") Elen Benitez
+                                    span(class="text-gray-400 font-bold") CPO at Nigodo
+                        div(class="w-full md:w-1/2 lg:w-1/3 px-4 mb-8")
+                            div(class="h-full max-w-md mx-auto py-10 px-6 md:px-10 bg-white border-3 border-indigo-900 rounded-2xl shadow-md hidden")
+                                div(class="h-full flex flex-col")
+                                    h3(class="text-xl md:text-2xl font-extrabold leading-8 mb-auto") The best solution for anyone who wants to work a flexible schedule but still earn a full-time income.
+                                    h4(class="md:text-xl font-extrabold mt-10") Macauley Herring
+                                    span(class="text-gray-400 font-bold") CEO & Founder at Nigodo
+                        div(class="w-full md:w-1/2 lg:w-1/3 px-4 mb-8")
+                            div(class="h-full max-w-md mx-auto py-10 px-6 md:px-10 bg-white border-3 border-indigo-900 rounded-2xl shadow-md hidden")
+                                div(class="h-full flex flex-col")
+                                    h3(class="text-xl md:text-2xl font-extrabold leading-8 mb-auto") I just can't get enough of Flex. I want to get a T-Shirt with Flex on it so I can show it off to everyone. I will recommend you to my colleagues.
+                                    h4(class="md:text-xl font-extrabold mt-10") Ivan Mathews
+                                    span(class="text-gray-400 font-bold") CTO at Nigodo
+                        div(class="w-full md:w-1/2 lg:w-1/3 px-4 mb-8")
+                            div(class="h-full max-w-md mx-auto py-10 px-6 md:px-10 bg-white border-3 border-indigo-900 rounded-2xl shadow-md hidden")
+                                div(class="h-full flex flex-col")
+                                    h3(class="text-xl md:text-2xl font-extrabold leading-8 mb-auto") You won't regret it. We've seen amazing results already. Thanks guys, keep up the good work!
+                                    h4(class="md:text-xl font-extrabold mt-10") Elen Benitez
+                                    span(class="text-gray-400 font-bold") CPO at Nigodo
+            section(class="py-26 bg-orange-200")
+                div(class="container px-4 mx-auto")
+                    div(class="text-center mb-16")
+                        span(class="text-lg font-extrabold text-orange-500") Packages to choose from
+                        h1(class="text-3xl md:text-4xl font-extrabold font-heading mt-4 mb-6") Flexible fractional development solutionsÂ available for you
+                        p(class="text-xl font-extrabold leading-8") We know that every situation and every application is different and we do our best to support every case during our work.
+                    div(class="flex flex-wrap -mx-4")
+                        div(class="w-full lg:w-1/3 px-4 mb-12 lg:mb-0")
+                            div(class="max-w-md mx-auto px-6 py-12 bg-white border-3 border-indigo-900 rounded-2xl shadow-md text-center")
+                                h2(class="text-3xl md:text-4xl font-extrabold mb-6") One time upgrade
+                                p(class="text-lg font-extrabold") One-off contract starting from
+                                div(class="flex justify-center items-start mb-8")
+                                    span(class="pr-1 text-lg font-extrabold")       
+                                    |                   
+                                    span(class="text-4xl md:text-5xl font-extrabold") 50
+                                    |                   
+                                    span(class="pl-1 text-lg font-extrabold self-end") hours
+                                a(class="inline-block w-full py-4 px-6 mb-12 text-center leading-6 text-lg text-white font-extrabold bg-indigo-800 hover:bg-indigo-900 border-3 border-indigo-900 shadow rounded transition duration-200", href="contact.html") Get Started
+                                div(class="text-left")
+                                    div(class="flex mb-4 items-center")
+                                        img(class="block w-6 h-6 mr-2 object-contain", src="nigodo-assets/circle-icon-green.svg", alt="")
+                                        span(class="text-lg font-extrabold") Security audit is green
+                                    div(class="flex mb-4 items-center")
+                                        img(class="block w-6 h-6 mr-2 object-contain", src="nigodo-assets/circle-icon-green.svg", alt="")
+                                        span(class="text-lg font-extrabold") SupportedÂ Ruby version
+                                    div(class="flex mb-4 items-center")
+                                        img(class="block w-6 h-6 mr-2 object-contain", src="nigodo-assets/circle-icon-green.svg", alt="")
+                                        span(class="text-lg font-extrabold") Supported Ruby on Rails release
+                                    div(class="flex items-center")
+                                        img(class="block w-6 h-6 mr-2 object-contain", src="nigodo-assets/circle-icon-green.svg", alt="")
+                                        span(class="text-lg font-extrabold") Application test suite is green
+                        div(class="w-full lg:w-1/3 px-4 mb-12 lg:mb-0")
+                            div(class="max-w-md mx-auto px-6 py-12 bg-white border-3 border-indigo-900 rounded-2xl shadow-md text-center")
+                                h2(class="text-3xl md:text-4xl font-extrabold mb-6") Continuous maintenance
+                                p(class="text-lg font-extrabold") Continuous contract, starting from
+                                div(class="flex justify-center items-start mb-8")
+                                    span(class="pr-1 text-lg font-extrabold hidden") hours
+                                    |                   
+                                    span(class="text-4xl md:text-5xl font-extrabold") 20
+                                    |                   
+                                    span(class="pl-1 text-lg font-extrabold self-end") hours/month
+                                a(class="inline-block w-full py-4 px-6 mb-12 text-center leading-6 text-lg text-white font-extrabold bg-indigo-800 hover:bg-indigo-900 border-3 border-indigo-900 shadow rounded transition duration-200", href="contact.html") Get Started
+                                div(class="text-left")
+                                    div(class="flex mb-4 items-center")
+                                        img(class="block w-6 h-6 mr-2 object-contain", src="nigodo-assets/circle-icon-green.svg", alt="")
+                                        span(class="text-lg font-extrabold") Security audit is green
+                                        |       
+                                    div(class="flex mb-4 items-center")
+                                        img(class="block w-6 h-6 mr-2 object-contain", src="nigodo-assets/circle-icon-green.svg", alt="")
+                                        span(class="text-lg font-extrabold") Supported Ruby version 
+                                    div(class="flex mb-4 items-center")
+                                        img(class="block w-6 h-6 mr-2 object-contain", src="nigodo-assets/circle-icon-green.svg", alt="")
+                                        span(class="text-lg font-extrabold") Supported Ruby on Rails release 
+                                    div(class="flex mb-4 items-center")
+                                        img(class="block w-6 h-6 mr-2 object-contain", src="nigodo-assets/circle-icon-green.svg", alt="")
+                                        span(class="text-lg font-extrabold") Application test suite is green
+                                        |       
+                                    div(class="flex items-center")
+                                        img(class="block w-6 h-6 mr-2 object-contain", src="nigodo-assets/circle-icon-green.svg", alt="")
+                                        span(class="text-lg font-extrabold") Bugfix included: 1 day / month
+                        div(class="w-full lg:w-1/3 px-4")
+                            div(class="max-w-md mx-auto px-6 py-12 bg-white border-3 border-indigo-900 rounded-2xl shadow-md text-center")
+                                h2(class="text-3xl md:text-4xl font-extrabold mb-6") Maintenance with SLA
+                                p(class="text-lg font-extrabold") Contract with SLA, starting from
+                                div(class="flex justify-center items-start mb-8")
+                                    span(class="pr-1 text-lg font-extrabold hidden") hours
+                                    |                   
+                                    span(class="text-4xl md:text-5xl font-extrabold") 20
+                                    |                   
+                                    span(class="pl-1 text-lg font-extrabold self-end") hours/month
+                                a(class="inline-block w-full py-4 px-6 mb-12 text-center leading-6 text-lg text-white font-extrabold bg-indigo-800 hover:bg-indigo-900 border-3 border-indigo-900 shadow rounded transition duration-200", href="contact.html") Get Started
+                                div(class="text-left")
+                                    div(class="flex mb-4 items-center")
+                                        img(class="block w-6 h-6 mr-2 object-contain", src="nigodo-assets/circle-icon-green.svg", alt="")
+                                        span(class="text-lg font-extrabold") Security audit is green
+                                        |       
+                                    div(class="flex mb-4 items-center")
+                                        img(class="block w-6 h-6 mr-2 object-contain", src="nigodo-assets/circle-icon-green.svg", alt="")
+                                        span(class="text-lg font-extrabold") SupportedÂ Ruby versionÂ 
+                                    div(class="flex mb-4 items-center")
+                                        img(class="block w-6 h-6 mr-2 object-contain", src="nigodo-assets/circle-icon-green.svg", alt="")
+                                        span(class="text-lg font-extrabold") Supported Ruby on Rails release 
+                                    div(class="flex mb-4 items-center")
+                                        img(class="block w-6 h-6 mr-2 object-contain", src="nigodo-assets/circle-icon-green.svg", alt="")
+                                        span(class="text-lg font-extrabold") Application test suite is green
+                                        |       
+                                    div(class="flex mb-4 items-center")
+                                        img(class="block w-6 h-6 mr-2 object-contain", src="nigodo-assets/circle-icon-green.svg", alt="")
+                                        span(class="text-lg font-extrabold") Bugfix included: 1 day / month
+                                    div(class="flex items-center")
+                                        img(class="block w-6 h-6 mr-2 object-contain", src="nigodo-assets/circle-icon-green.svg", alt="")
+                                        span(class="text-lg font-extrabold") Contract specified SLA
+            section(class="py-26 xl:pb-32 bg-orange-200")
+                div(class="container px-4 mx-auto text-center")
+                    span(class="text-lg font-extrabold text-orange-500") Questions raised?
+                    |       
+                    h1(class="text-3xl md:text-4xl font-extrabold font-heading mt-4 mb-6") You need a team to rely on. Schedule a call today!
+                    p(class="max-w-4xl mx-auto text-xl font-extrabold leading-8 mb-12") Our development team at App Maintainers is powerful and ready to jump into any existing or new Ruby on Rails related project. We are happy to talk about your business needs.
+                    a(class="inline-block w-full md:w-auto py-4 px-6 leading-6 text-lg text-white font-extrabold bg-indigo-800 hover:bg-indigo-900 border-3 border-indigo-900 shadow rounded transition duration-200", href="contact.html") Let's talk!
+            section
+                div(class="pt-26 border-3 border-l-0 border-r-0 border-indigo-900")
+                    div(class="pb-16 border-b-3 border-indigo-900")
+                        div(class="container px-4 mx-auto text-center")
+                            a(class="inline-block mx-auto mb-20", href="index.html")
+                                img(class="h-40", src="images/AM-logo-transparent.png", alt="")
+                            div(class="flex flex-wrap -mx-4 -mb-6 justify-center")
+                                div(class="w-full md:w-1/3 xl:w-auto px-4 mb-6 md:mr-10 2xl:mr-16")
+                                    a(class="text-xl md:text-2xl font-extrabold hover:text-indigo-800", href="about.html") About us
+                                div(class="w-full md:w-1/3 xl:w-auto px-4 mb-6 md:mr-10 2xl:mr-16")
+                                    a(class="text-xl md:text-2xl font-extrabold hover:text-indigo-800", href="development.html") Development
+                                div(class="w-full md:w-1/3 xl:w-auto px-4 mb-6 md:mr-10 2xl:mr-16")
+                                    a(class="text-xl md:text-2xl font-extrabold hover:text-indigo-800", href="maintenance.html") Archeology / Maintainance
+                                div(class="w-full md:w-1/3 xl:w-auto px-4 mb-6 md:mr-10 2xl:mr-16")
+                                    a(class="text-xl md:text-2xl font-extrabold hover:text-indigo-800", href="contact.html") Contacts
+                                    |       
+                                div(class="w-full md:w-1/3 xl:w-auto px-4 mb-6 md:mr-10 2xl:mr-16")
+                                    a(class="text-xl md:text-2xl font-extrabold hover:text-indigo-800", href="careers.html") Careers
+                                div(class="w-full md:w-1/3 xl:w-auto px-4 mb-6 md:mr-10 2xl:mr-16 hidden")
+                                    a(class="text-xl md:text-2xl font-extrabold hover:text-indigo-800", href="#") Help
+                                div(class="w-full md:w-1/3 xl:w-auto px-4 mb-6")
+                                    a(class="text-xl md:text-2xl font-extrabold hover:text-indigo-800 hidden", href="#") Privacy
+                    div(class="container px-4 pt-16 pb-24 mx-auto")
+                        p(class="text-center text-xl md:text-2xl font-extrabold") Â© 2023 App Maintainers. All rights reserved.
