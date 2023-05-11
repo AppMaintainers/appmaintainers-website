@@ -12,7 +12,7 @@
 }
 
 .bg-hero{
-  background-image: url('nigodo-assets/background/background-orange-top.svg');
+  background-image: url('/nigodo-assets/background/background-orange-top.svg');
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat; 

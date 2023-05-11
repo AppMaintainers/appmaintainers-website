@@ -86,18 +86,32 @@
               </div>
             </div>
             <div class="w-full lg:w-1/2 px-4">
-              <div class="max-w-xl mx-auto py-16 px-6 md:px-14 bg-white border-3 border-indigo-900 shadow-md rounded-2xl text-center"><img class="block mb-6 mx-auto h-40" src="images/AM-logo-transparent.png" alt=""/>
-                <h2 class="text-2xl sm:text-3xl font-extrabold mb-2">Contact form</h2>
-                <p class="sm:text-lg font-extrabold text-indigo-500 mb-8">Share you situation with us!</p>
-                <div class="text-left mb-4 md:mb-6">
-                  <label class="font-extrabold" for="">Email</label>
-                  <input class="block w-full mt-2 p-4 text-lg font-extrabold placeholder-indigo-900 shadow border-2 border-indigo-900 rounded" type="email" placeholder="hello@shuffle.dev"/>
-                </div><a class="block mb-6 py-4 px-6 text-center leading-6 text-lg text-white font-extrabold bg-indigo-800 hover:bg-indigo-900 border-3 border-indigo-900 shadow rounded transition duration-200" href="#">Sign Up</a>
-                <div class="flex mb-5 items-center">
-                  <div class="h-px w-full bg-indigo-100"></div><span class="mx-2 text-sm text-indigo-300">OR</span>
-                  <div class="h-px w-full bg-indigo-100"></div>
-                </div><a class="block mb-4 py-4 px-6 text-center hover:text-white leading-6 text-lg font-extrabold bg-white hover:bg-indigo-800 border-3 border-indigo-900 shadow rounded transition duration-200" href="#">Sign in with Google</a><a class="block mb-4 py-4 px-6 text-center hover:text-white leading-6 text-lg font-extrabold bg-white hover:bg-indigo-800 border-3 border-indigo-900 shadow rounded transition duration-200" href="#">Sign in with Facebook</a><a class="block py-4 px-6 text-center hover:text-white leading-6 text-lg font-extrabold bg-white hover:bg-indigo-800 border-3 border-indigo-900 shadow rounded transition duration-200" href="#">Sign in with Apple</a>
-              </div>
+              <form name="contact" data-netlify="true" netlify-honeypot="age" data-netlify-recaptcha="true">
+                <div class="max-w-xl mx-auto py-16 px-6 md:px-14 bg-white border-3 border-indigo-900 shadow-md rounded-2xl text-center"><img class="block mb-6 mx-auto h-40" src="images/AM-logo-transparent.png" alt=""/>
+                  <h2 class="text-2xl sm:text-3xl font-extrabold mb-2">Contact form</h2>
+                  <p class="sm:text-lg font-extrabold text-indigo-500 mb-8">Share you situation with us!</p>
+                  <div class="text-left mb-4 md:mb-6">
+                    <label class="font-extrabold" for="name">Name</label>
+                    <input class="block w-full mt-2 p-4 text-lg font-extrabold placeholder-grey-200 shadow border-2 border-indigo-900 rounded" name="name" type="email" placeholder="Your name"/>
+                  </div>
+                  <div class="text-left mb-4 md:mb-6 hidden">
+                    <label class="font-extrabold" for="age">Age</label>
+                    <input class="block w-full mt-2 p-4 text-lg font-extrabold placeholder-grey-200 shadow border-2 border-indigo-900 rounded" name="age" type="email" placeholder="Your name"/>
+                  </div>
+                  <div class="text-left mb-4 md:mb-6">
+                    <label class="font-extrabold" for="email">Email</label>
+                    <input class="block w-full mt-2 p-4 text-lg font-extrabold placeholder-grey-200 shadow border-2 border-indigo-900 rounded" name="email" type="email" placeholder="info@appmaintainers.com"/>
+                  </div>
+                  <div class="text-left mb-4 md:mb-6">
+                    <label class="font-extrabold" for="phone">Phone</label>
+                    <input class="block w-full mt-2 p-4 text-lg font-extrabold placeholder-grey-200 shadow border-2 border-indigo-900 rounded" name="phone" type="email" placeholder="+1 234 567 890"/>
+                  </div>
+                  <div class="text-left mb-4 md:mb-6">
+                    <label class="font-extrabold" for="phone">Message</label>
+                    <textarea class="block w-full mt-2 p-4 text-lg font-extrabold placeholder-grey-200 shadow border-2 border-indigo-900 rounded" name="phone" type="email" placeholder="..."></textarea>
+                  </div><a class="block mb-6 py-4 px-6 text-center leading-6 text-lg text-white font-extrabold bg-indigo-800 hover:bg-indigo-900 border-3 border-indigo-900 shadow rounded transition duration-200" href="#">Send!</a>
+                </div>
+              </form>
             </div>
           </div>
         </div>
