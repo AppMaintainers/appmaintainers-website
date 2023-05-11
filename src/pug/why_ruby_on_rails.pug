@@ -55,60 +55,16 @@ html(lang="en")
                         div
                             a(class="block mb-6 text-center leading-6 text-lg font-extrabold hover:text-indigo-800", href="#") Log In
                             a(class="block py-4 px-6 text-center leading-6 text-lg text-white font-extrabold bg-indigo-800 hover:bg-indigo-900 border-3 border-indigo-900 shadow rounded transition duration-200", href="#") Sign Up
-            section(class="relative pb-24")
-                div(class="absolute top-0 right-0 flex w-full h-3/4 md:h-2/3 bg-orange-200")
-                    img(class="absolute bottom-0 left-0 right-0 w-full -mb-4", src="nigodo-assets/background/background-orange-top.svg", alt="")
-                nav(class="flex mb-20 justify-between items-center py-6 px-10 relative hidden")
-                    a(class="text-lg font-bold", href="#")
-                        img(class="h-8", src="nigodo-assets/logo-nigodo.svg", alt="", width="auto")
-                    div(class="xl:hidden")
-                        button(class="navbar-burger focus:outline-none text-indigo-900 hover:text-indigo-800")
-                            svg(class="block h-6 w-6", fill="currentColor", viewbox="0 0 20 20", xmlns="http://www.w3.org/2000/svg")
-                                title Mobile menu
-                                path(d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z")
-                    ul(class="hidden xl:flex absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2")
-                        li
-                            a(class="text-lg mr-10 2xl:mr-16 font-extrabold hover:text-indigo-800", href="#") Product
-                        li
-                            a(class="text-lg mr-10 2xl:mr-16 font-extrabold hover:text-indigo-800", href="#") Features
-                        li
-                            a(class="text-lg mr-10 2xl:mr-16 font-extrabold hover:text-indigo-800", href="#") Pricing
-                        li
-                            a(class="text-lg font-extrabold hover:text-indigo-800", href="#") Resources
-                    div(class="hidden xl:flex items-center")
-                        a(class="inline-block mr-6 text-lg font-extrabold hover:text-indigo-800", href="#") Log In
-                        a(class="inline-block py-4 px-6 text-center leading-6 text-lg text-white font-extrabold bg-indigo-800 hover:bg-indigo-900 border-3 border-indigo-900 shadow rounded transition duration-200", href="#") Sign Up
+            section(class="bg-hero pb-26 pt-14")
                 div(class="container px-4 mx-auto relative")
-                    div(class="max-w-5xl mx-auto text-center")
-                        span(class="text-xl md:text-2xl font-extrabold text-orange-500") Ship early, ship often!
-                        h1(class="max-w-4xl mx-auto text-3xl sm:text-4xl lg:text-5xl font-extrabold font-heading mt-1 mb-6 fade-in-down") Ruby on Rails. One of the fastest way from idea to live product. Period.
-                        p(class="text-xl md:text-2xl font-extrabold leading-8 mb-12") Companies using Ruby on Rails to empover small teams to build big products. Github, Shopify, Hey are the biggest products you might know built by Rails. Your idea could be the next big thing.
-                        div(class="flex flex-wrap mb-20 justify-center")
+                    div(class="max-w-4xl mx-auto text-center")
+                        span(class="text-lg font-extrabold text-orange-500") Ship early, ship often!
+                        h1(class="text-3xl md:text-4xl font-extrabold font-heading mt-4 mb-6 lg:text-5xl fade-in-down") Ruby on Rails. One of the fastest way from idea to live product. Period.
+                        p(class="text-xl font-extrabold leading-8 mb-10") Companies using Ruby on Rails to empover small teams to build big products. Github, Shopify, Hey are the biggest products you might know built by Rails. Your idea could be the next big thing.
+                        div(class="flex flex-wrap mb-16 justify-center")
                             a(class="inline-block w-full md:w-auto mb-2 md:mb-0 md:mr-4 py-4 px-6 text-center leading-6 text-lg text-white font-extrabold bg-indigo-800 hover:bg-indigo-900 border-3 border-indigo-900 shadow rounded transition duration-200", href="contact.html") Talk to us!
-                            a(class="inline-block w-full md:w-auto py-4 px-6 text-center leading-6 text-lg hover:text-white font-extrabold bg-white border-3 border-indigo-900 hover:bg-indigo-800 shadow rounded transition duration-200", href="development.html") Learn more about development!
-                        img(class="block w-full h-128 lg:h-140 object-cover border-3 border-indigo-900 rounded-2xl shadow-lg", src="https://images.unsplash.com/photo-1495573258723-2c7be7a646ce?crop=entropy&cs=srgb&fm=jpg&ixid=MnwzMzIzMzB8MHwxfHNlYXJjaHwxfHxyYWlsc3xlbnwwfDB8fHwxNjgyMzU4MjQz&ixlib=rb-4.0.3&q=85&w=1920", alt="")
-                div(class="hidden navbar-menu relative z-50")
-                    div(class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25")
-                    nav(class="fixed top-0 left-0 bottom-0 flex flex-col w-full md:w-5/6 max-w-sm py-8 px-8 bg-white border-r overflow-y-auto")
-                        div(class="flex items-center mb-8")
-                            a(class="mr-auto text-2xl font-bold leading-none", href="#")
-                                img(class="h-6", src="nigodo-assets/logo-nigodo.svg", alt="", width="auto")
-                            button(class="navbar-close")
-                                svg(class="h-6 w-6 text-gray-500 cursor-pointer hover:text-gray-500", xmlns="http://www.w3.org/2000/svg", fill="none", viewbox="0 0 24 24", stroke="currentColor")
-                                    path(stroke-linecap="round", stroke-linejoin="round", stroke-width="2", d="M6 18L18 6M6 6l12 12")
-                        div(class="my-auto")
-                            ul(class="py-10")
-                                li(class="mb-1")
-                                    a(class="block p-4 text-lg font-extrabold hover:bg-gray-50 rounded", href="#") Product
-                                li(class="mb-1")
-                                    a(class="block p-4 text-lg font-extrabold hover:bg-gray-50 rounded", href="#") Features
-                                li(class="mb-1")
-                                    a(class="block p-4 text-lg font-extrabold hover:bg-gray-50 rounded", href="#") Pricing
-                                li(class="mb-1")
-                                    a(class="block p-4 text-lg font-extrabold hover:bg-gray-50 rounded", href="#") Resources
-                        div
-                            a(class="block mb-6 text-center leading-6 text-lg font-extrabold hover:text-indigo-800", href="#") Log In
-                            a(class="block py-4 px-6 text-center leading-6 text-lg text-white font-extrabold bg-indigo-800 hover:bg-indigo-900 border-3 border-indigo-900 shadow rounded transition duration-200", href="#") Sign Up
+                            a(class="inline-block w-full md:w-auto py-4 px-6 text-center leading-6 text-lg text-indigo-900 hover:text-white font-extrabold bg-white hover:bg-indigo-800 border-3 border-indigo-900 shadow rounded transition duration-200", href="development.html") Learn more about development!
+                        img(class="block mx-auto w-full h-112 lg:h-140 object-cover border-3 border-indigo-900 rounded-2xl shadow-lg", src="https://images.unsplash.com/photo-1495573258723-2c7be7a646ce?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzIzMzB8MHwxfHNlYXJjaHw0NHx8cnVieSUyMG9uJTIwcmFpbHN8ZW58MHx8fHwxNjgzODA5MzU0fDA&ixlib=rb-4.0.3&q=85&w=1920", alt="")
             section(class="py-26 relative")
                 img(class="absolute top-0 left-0 w-full md:h-full hidden", src="nigodo-assets/background-elements/pattern-center-dots-color.svg", alt="")
                 div(class="container px-4 mx-auto relative")

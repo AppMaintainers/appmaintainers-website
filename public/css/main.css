@@ -1,20 +1,20 @@
-/**
-* This is a valid CSS file.
-**/
-.your-class {}
-
 .fade-in-down {
-  animation: fade-in-down 1s ease;
+  animation: 1s fade-in-down
 }
+
 @keyframes fade-in-down {
   0% {
-    opacity: 0.2;
-    /*transform: translateY(-10px);*/
+    opacity: .2
   }
   100% {
-    opacity: 1;
-    /*transform: translateY(0);*/
+    opacity: 1
   }
 }
 
+.bg-hero{
+  background-image: url('nigodo-assets/background/background-orange-top.svg');
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat; 
+}
 
